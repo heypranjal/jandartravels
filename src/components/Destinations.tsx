@@ -188,9 +188,9 @@ const Destinations: React.FC = () => {
                       <Link to={package_.route} className="btn-secondary text-xs sm:text-sm py-2">
                         View Details
                       </Link>
-                      <button className="btn-primary text-xs sm:text-sm py-2" onClick={handleBookTour}>
+                      <Link to="/contact-us" className="btn-primary text-xs sm:text-sm py-2">
                         Book Tour
-                      </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -214,9 +214,9 @@ const Destinations: React.FC = () => {
                     <Link to={package_.route} className="btn-secondary text-center text-xs sm:text-sm py-2 sm:py-3">
                       View Details
                     </Link>
-                    <button className="btn-primary text-xs sm:text-sm py-2 sm:py-3" onClick={handleBookTour}>
+                    <Link to="/contact-us" className="btn-primary text-xs sm:text-sm py-2 sm:py-3">
                       Book Now
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>

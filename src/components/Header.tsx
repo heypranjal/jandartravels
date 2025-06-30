@@ -107,9 +107,9 @@ const Header: React.FC = () => {
 
           {/* Book Now Button */}
           <div className="hidden md:block ml-6">
-            <button onClick={handleBookNow} className="btn-primary">
+            <Link to="/contact-us" className="btn-primary">
               Book Now
-            </button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -176,7 +176,7 @@ const Header: React.FC = () => {
                 <Link to="/tours/chandigarh" className="block text-gray-700 hover:text-primary pl-4 py-2">• CHANDIGARH TOUR PACKAGE</Link>
               </div>
               <Link to="/contact-us" className="block text-gray-700 hover:text-primary font-medium">Contact</Link>
-              <button onClick={handleBookNow} className="btn-primary w-full mt-6">Book Now</button>
+              <Link to="/contact-us" className="btn-primary w-full mt-6">Book Now</Link>
             </nav>
           </div>
         )}
