@@ -53,7 +53,7 @@ A modern, responsive website for Jandar Travels, a premium taxi and tour service
 - **ERTIGA** - Maruti Ertiga
 - **Swift DZIRE** - Compact Sedan
 - **Etios** - Toyota Etios
-- **Breeza** - Maruti Breeza
+- **Brezza** - Maruti Brezza
 - **Bus** - Luxury Bus for Group Tours
 
 ## Tour Packages
