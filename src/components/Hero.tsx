@@ -1,0 +1,168 @@
+import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+
+const Hero: React.FC = () => {
+  const navigate = useNavigate();
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [showSplash, setShowSplash] = useState(true);
+
+  const handleBookNow = () => {
+    navigate('/contact-us');
+  };
+
+  const carouselImages = [
+    {
+      id: 1,
+      image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      title: 'Premium Taxi Services',
+      subtitle: 'Luxury vehicles for your comfort'
+    },
+    {
+      id: 2,
+      image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      title: 'Tour Packages',
+      subtitle: 'Explore India with our curated tours'
+    },
+    {
+      id: 3,
+      image: 'https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2025&q=80',
+      title: '24/7 Service',
+      subtitle: 'Always ready to serve you'
+    }
+  ];
+
+  // Splash screen effect - hide after 2.5 seconds
+  useEffect(() => {
+    const splashTimer = setTimeout(() => {
+      setShowSplash(false);
+    }, 2500);
+
+    return () => clearTimeout(splashTimer);
+  }, []);
+
+  // Auto-slide every 5 seconds (only when splash is hidden)
+  useEffect(() => {
+    if (!showSplash) {
+      const interval = setInterval(() => {
+        setCurrentSlide((prev) => (prev + 1) % carouselImages.length);
+      }, 5000);
+
+      return () => clearInterval(interval);
+    }
+  }, [carouselImages.length, showSplash]);
+
+  const goToSlide = (index: number) => {
+    setCurrentSlide(index);
+  };
+
+  const goToPrevious = () => {
+    setCurrentSlide((prev) => (prev - 1 + carouselImages.length) % carouselImages.length);
+  };
+
+  const goToNext = () => {
+    setCurrentSlide((prev) => (prev + 1) % carouselImages.length);
+  };
+
+  return (
+    <>
+      {/* Full Screen Splash Screen */}
+      {showSplash && (
+        <div className="fixed inset-0 z-50 bg-gradient-to-r from-blue-900 to-blue-700 flex items-center justify-center">
+          <div className="text-center text-white px-4">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold mb-3 sm:mb-4 animate-pulse">
+              Welcome to Jandar Travels
+            </h1>
+            <div className="w-12 sm:w-16 h-1 bg-white mx-auto animate-ping"></div>
+          </div>
+        </div>
+      )}
+
+      {/* Main Carousel Section */}
+      <section id="home" className="pt-16 sm:pt-20 relative h-screen">
+        {/* Carousel Container */}
+        <div className="relative w-full h-full overflow-hidden">
+          {/* Carousel Slides */}
+          <div 
+            className="flex transition-transform duration-1000 ease-in-out h-full"
+            style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+          >
+            {carouselImages.map((slide, index) => (
+              <div key={slide.id} className="w-full h-full flex-shrink-0 relative">
+                {/* Background Image */}
+                <div 
+                  className="w-full h-full bg-cover bg-center bg-no-repeat"
+                  style={{ backgroundImage: `url(${slide.image})` }}
+                >
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Content Overlay */}
+          <div className="absolute inset-0 flex items-center justify-center px-4 sm:px-6 lg:px-8">
+            <div className="text-center text-white z-10 max-w-4xl">
+              <div className="text-lg sm:text-xl md:text-2xl mb-2 sm:mb-4">
+                Premium Travel Services
+              </div>
+              <div className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 sm:mb-4">
+                WELCOME IN
+              </div>
+              <div className="text-2xl sm:text-4xl md:text-6xl font-bold mb-2 sm:mb-4">
+                JANDAR TRAVELS
+              </div>
+              <div className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-6">
+                NOIDA SECTOR - 31
+              </div>
+              <div className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6 md:mb-8">
+                PLEASE LET US KNOW HOW WE CAN HELP YOU
+              </div>
+              
+              {/* Centered Buttons */}
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+                <button className="btn-secondary text-sm sm:text-base md:text-lg px-6 sm:px-8 py-2 sm:py-3">
+                  Book Taxi
+                </button>
+                <button onClick={handleBookNow} className="btn-primary text-sm sm:text-base md:text-lg px-6 sm:px-8 py-2 sm:py-3">
+                  Tour Packages
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Navigation Arrows */}
+          <button
+            onClick={goToPrevious}
+            className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-50 text-white p-2 sm:p-3 rounded-full transition-all duration-300"
+          >
+            <i className="fas fa-chevron-left text-lg sm:text-xl"></i>
+          </button>
+          <button
+            onClick={goToNext}
+            className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-50 text-white p-2 sm:p-3 rounded-full transition-all duration-300"
+          >
+            <i className="fas fa-chevron-right text-lg sm:text-xl"></i>
+          </button>
+
+          {/* Dots Indicator */}
+          <div className="absolute bottom-4 sm:bottom-8 left-1/2 transform -translate-x-1/2 flex space-x-2 sm:space-x-3">
+            {carouselImages.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => goToSlide(index)}
+                className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-300 ${
+                  index === currentSlide 
+                    ? 'bg-white' 
+                    : 'bg-white bg-opacity-50 hover:bg-opacity-75'
+                }`}
+              ></button>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default Hero; 
