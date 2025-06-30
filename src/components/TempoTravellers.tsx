@@ -187,7 +187,7 @@ const TaxiFleet: React.FC = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
           {taxiFleet.map((taxi, index) => (
-            <div key={index} className="card hover:scale-105 transition-transform duration-300 overflow-hidden">
+            <div key={index} className="card card-fill-hover hover:scale-105 transition-transform duration-300 overflow-hidden">
               <div className="relative h-40 sm:h-48 bg-gray-200 mb-3 sm:mb-4">
                 <img 
                   src={taxi.image} 
