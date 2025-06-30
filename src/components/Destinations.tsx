@@ -176,7 +176,7 @@ const Destinations: React.FC = () => {
           <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8 text-center">Tour Packages</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
             {tourPackages.map((package_, index) => (
-              <div key={index} className="card overflow-hidden group">
+              <div key={index} className="card card-fill-hover overflow-hidden group">
                 <div className="relative overflow-hidden">
                   <img 
                     src={package_.image} 

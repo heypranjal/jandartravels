@@ -54,7 +54,7 @@ const Header: React.FC = () => {
       </div>
 
       {/* Lower Division: Main Navbar */}
-      <div className="container-custom bg-white" style={{ minHeight: '120px' }}>
+      <div className="max-w-5xl mx-auto bg-white" style={{ minHeight: '80px' }}>
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center">

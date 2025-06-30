@@ -45,7 +45,7 @@ const Features: React.FC = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {features.map((feature, index) => (
-            <div key={index} className="card text-center p-6 sm:p-8">
+            <div key={index} className="card card-fill-hover text-center p-6 sm:p-8">
               <div className="text-4xl sm:text-5xl text-primary mb-4 sm:mb-6">
                 <i className={feature.icon}></i>
               </div>
@@ -107,7 +107,7 @@ const Features: React.FC = () => {
             <div className="bg-gradient-to-br from-primary to-blue-600 rounded-lg p-6 sm:p-8 text-white">
               <h4 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Ready to Book?</h4>
               <p className="mb-4 sm:mb-6 text-sm sm:text-base">Get in touch with us for the best tempo traveller rental experience in Delhi NCR.</p>
-              <div className="space-y-3 sm:space-y-4">
+              <div className="space-y-3 sm:space-y-4 mb-6">
                 <div className="flex items-center">
                   <i className="fas fa-phone mr-3 text-sm sm:text-base"></i>
                   <span className="text-sm sm:text-base">+91-72900 00667</span>
@@ -121,7 +121,7 @@ const Features: React.FC = () => {
                   <span className="text-sm sm:text-base">Noida Sector - 31, India</span>
                 </div>
               </div>
-              <Link to="/contact-us" className="btn-secondary w-full mt-4 sm:mt-6 text-sm sm:text-base py-3">
+              <Link to="/contact-us" className="btn-secondary w-full mt-8 sm:mt-10 text-sm sm:text-base py-3">
                 Book Now
               </Link>
             </div>
