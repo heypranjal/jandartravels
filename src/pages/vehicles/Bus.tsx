@@ -23,19 +23,12 @@ const Bus: React.FC = () => {
                   <p className="text-sm text-gray-500 mt-2">Bus Exterior</p>
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-gray-200 rounded-lg p-6 flex items-center justify-center">
-                  <div className="text-center">
-                    <i className="fas fa-bus-alt text-4xl text-blue-400 mb-2"></i>
-                    <p className="text-sm text-gray-600">Side View</p>
-                  </div>
-                </div>
-                <div className="bg-gray-200 rounded-lg p-6 flex items-center justify-center">
-                  <div className="text-center">
-                    <i className="fas fa-bus text-4xl text-blue-400 mb-2"></i>
-                    <p className="text-sm text-gray-600">Interior</p>
-                  </div>
-                </div>
+              <div className="bg-gray-200 rounded-lg overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                  alt="Luxury Bus"
+                  className="w-full h-80 object-cover"
+                />
               </div>
             </div>
             <div className="space-y-8">
