@@ -28,24 +28,8 @@ const Etios: React.FC = () => {
                 <img 
                   src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
                   alt="Toyota Etios"
-                  className="w-full h-64 object-cover"
+                  className="w-full h-80 object-cover"
                 />
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-gray-200 rounded-lg overflow-hidden">
-                  <img 
-                    src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                    alt="Etios Interior"
-                    className="w-full h-32 object-cover"
-                  />
-                </div>
-                <div className="bg-gray-200 rounded-lg overflow-hidden">
-                  <img 
-                    src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                    alt="Etios Exterior"
-                    className="w-full h-32 object-cover"
-                  />
-                </div>
               </div>
             </div>
 

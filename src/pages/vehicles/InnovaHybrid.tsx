@@ -29,24 +29,8 @@ const InnovaHybrid: React.FC = () => {
                 <img 
                   src={innovaImg} 
                   alt="Innova Hybrid"
-                  className="w-full h-64 object-cover"
+                  className="w-full h-80 object-cover"
                 />
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-gray-200 rounded-lg overflow-hidden">
-                  <img 
-                    src={innovaImg} 
-                    alt="Innova Hybrid Dashboard"
-                    className="w-full h-32 object-cover"
-                  />
-                </div>
-                <div className="bg-gray-200 rounded-lg overflow-hidden">
-                  <img 
-                    src={innovaImg} 
-                    alt="Innova Hybrid Exterior"
-                    className="w-full h-32 object-cover"
-                  />
-                </div>
               </div>
             </div>
 
