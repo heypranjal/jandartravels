@@ -73,7 +73,7 @@ const createContactEmailTemplate = (data) => {
       <div style="text-align: center; margin-top: 20px; color: #6b7280; font-size: 12px;">
         <p>This email was sent from the contact form on ${process.env.COMPANY_NAME || 'Jandar Travels'} website.</p>
         <p>${process.env.COMPANY_ADDRESS || 'Noida Sector - 31, Uttar Pradesh, India'}</p>
-        <p>Phone: ${process.env.COMPANY_PHONE || '+91-72900 00667'}</p>
+        <p>Phone: ${process.env.COMPANY_PHONE || '+91- 95258 53388'}</p>
       </div>
     </div>
   `;
@@ -108,7 +108,7 @@ const createAutoReplyTemplate = (data) => {
         <div style="margin-top: 30px; padding: 20px; background-color: #1e40af; color: white; border-radius: 8px; text-align: center;">
           <h3 style="margin: 0 0 10px 0;">Need immediate assistance?</h3>
           <p style="margin: 0; font-size: 18px;">
-            <strong>Call us: ${process.env.COMPANY_PHONE || '+91-72900 00667'}</strong>
+            <strong>Call us: ${process.env.COMPANY_PHONE || '+91- 95258 53388'}</strong>
           </p>
         </div>
       </div>
@@ -116,7 +116,7 @@ const createAutoReplyTemplate = (data) => {
       <div style="text-align: center; margin-top: 20px; color: #6b7280; font-size: 12px;">
         <p>${process.env.COMPANY_NAME || 'Jandar Travels'}</p>
         <p>${process.env.COMPANY_ADDRESS || 'Noida Sector - 31, Uttar Pradesh, India'}</p>
-        <p>Phone: ${process.env.COMPANY_PHONE || '+91-72900 00667'}</p>
+        <p>Phone: ${process.env.COMPANY_PHONE || '+91- 95258 53388'}</p>
       </div>
     </div>
   `;

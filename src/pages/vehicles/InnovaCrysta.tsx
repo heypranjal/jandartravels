@@ -158,9 +158,9 @@ const InnovaCrysta: React.FC = () => {
             <Link to="/contact-us" className="btn-secondary">
               Book Now
             </Link>
-            <a href="tel:+917290000667" className="btn-primary">
+            <a href="tel:+919525853388" className="btn-primary">
               <i className="fas fa-phone mr-2"></i>
-              Call +91-72900 00667
+              Call +91- 95258 53388
             </a>
           </div>
         </div>

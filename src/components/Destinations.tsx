@@ -176,7 +176,7 @@ const Destinations: React.FC = () => {
           <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8 text-center">Tour Packages</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
             {tourPackages.map((package_, index) => (
-              <div key={index} className="card card-fill-hover overflow-hidden group">
+              <div key={index} className="card overflow-hidden group">
                 <div className="relative overflow-hidden">
                   <img 
                     src={package_.image} 
@@ -214,7 +214,7 @@ const Destinations: React.FC = () => {
                     <Link to={package_.route} className="btn-secondary text-center text-xs sm:text-sm py-2 sm:py-3">
                       View Details
                     </Link>
-                    <Link to="/contact-us" className="btn-primary text-xs sm:text-sm py-2 sm:py-3">
+                    <Link to="/contact-us" className="btn-primary text-center text-xs sm:text-sm py-2 sm:py-3">
                       Book Now
                     </Link>
                   </div>
@@ -231,9 +231,9 @@ const Destinations: React.FC = () => {
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
             {outstationDestinations.map((dest, index) => (
-              <div key={index} className="bg-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/30 transition-colors cursor-pointer">
+              <Link key={index} to="/contact-us" className="bg-white/20 rounded-lg p-2 sm:p-3 text-center hover:bg-white/30 transition-colors cursor-pointer">
                 <span className="font-semibold text-xs sm:text-sm leading-relaxed">{dest}</span>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -243,9 +243,9 @@ const Destinations: React.FC = () => {
           <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6 text-center">Other Routes</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
             {otherRoutes.map((route, index) => (
-              <div key={index} className="bg-white rounded-lg p-3 sm:p-4 text-center shadow-sm hover:shadow-md transition-shadow">
+              <Link key={index} to="/contact-us" className="bg-white rounded-lg p-3 sm:p-4 text-center shadow-sm hover:shadow-md transition-shadow">
                 <span className="font-semibold text-gray-800 text-sm sm:text-base leading-relaxed">{route}</span>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -255,9 +255,9 @@ const Destinations: React.FC = () => {
           <h3 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-center">Delhi Local Services</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
             {delhiLocalServices.map((service, index) => (
-              <div key={index} className="bg-white/20 rounded-lg p-3 sm:p-4 text-center hover:bg-white/30 transition-colors cursor-pointer">
+              <Link key={index} to="/contact-us" className="bg-white/20 rounded-lg p-3 sm:p-4 text-center hover:bg-white/30 transition-colors cursor-pointer">
                 <span className="font-semibold text-sm sm:text-base leading-relaxed">{service}</span>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
