@@ -120,7 +120,7 @@ const AboutUs: React.FC = () => {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {services.map((service, index) => (
-              <div key={index} className="card card-fill-hover text-center p-6 sm:p-8">
+              <div key={index} className="card text-center p-6 sm:p-8">
                 <div className="text-4xl sm:text-5xl text-primary mb-4 sm:mb-6">
                   <i className={service.icon}></i>
                 </div>
@@ -197,7 +197,7 @@ const AboutUs: React.FC = () => {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {team.map((member, index) => (
-              <div key={index} className="card card-fill-hover text-center p-6 sm:p-8">
+              <div key={index} className="card text-center p-6 sm:p-8">
                 <div className="bg-primary text-white rounded-full w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center mx-auto mb-4 sm:mb-6">
                   <i className="fas fa-user text-xl sm:text-2xl"></i>
                 </div>
