@@ -231,7 +231,7 @@ const ContactUs: React.FC = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 text-sm sm:text-base">Phone</h4>
-                      <p className="text-gray-600 text-sm sm:text-base">+91-72900 00667</p>
+                      <a href="tel:+919525853388" className="text-gray-600 hover:text-primary transition-colors text-sm sm:text-base">+91- 95258 53388</a>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -240,7 +240,7 @@ const ContactUs: React.FC = () => {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 text-sm sm:text-base">Email</h4>
-                      <p className="text-gray-600 text-sm sm:text-base">booking@jandartravels.com</p>
+                      <a href="mailto:dharmendrajandar9525@gmail.com" className="text-gray-600 hover:text-primary transition-colors text-sm sm:text-base">dharmendrajandar9525@gmail.com</a>
                     </div>
                   </div>
                   <div className="flex items-center">

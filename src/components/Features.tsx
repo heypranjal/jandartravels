@@ -108,14 +108,14 @@ const Features: React.FC = () => {
               <h4 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">Ready to Book?</h4>
               <p className="mb-4 sm:mb-6 text-sm sm:text-base">Get in touch with us for the best tempo traveller rental experience in Delhi NCR.</p>
               <div className="space-y-3 sm:space-y-4 mb-6">
-                <div className="flex items-center">
-                  <i className="fas fa-phone mr-3 text-sm sm:text-base"></i>
-                  <span className="text-sm sm:text-base">+91-72900 00667</span>
-                </div>
-                <div className="flex items-center">
-                  <i className="fas fa-envelope mr-3 text-sm sm:text-base"></i>
-                  <span className="text-sm sm:text-base">booking@jandartravels.com</span>
-                </div>
+                                  <div className="flex items-center">
+                    <i className="fas fa-phone mr-3 text-sm sm:text-base"></i>
+                    <a href="tel:+919525853388" className="text-sm sm:text-base hover:text-primary transition-colors">+91- 95258 53388</a>
+                  </div>
+                  <div className="flex items-center">
+                    <i className="fas fa-envelope mr-3 text-sm sm:text-base"></i>
+                    <a href="mailto:dharmendrajandar9525@gmail.com" className="text-sm sm:text-base hover:text-primary transition-colors">dharmendrajandar9525@gmail.com</a>
+                  </div>
                 <div className="flex items-center">
                   <i className="fas fa-map-marker-alt mr-3 text-sm sm:text-base"></i>
                   <span className="text-sm sm:text-base">Noida Sector - 31, India</span>

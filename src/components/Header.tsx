@@ -13,6 +13,11 @@ const Header: React.FC = () => {
     navigate('/contact-us');
   };
 
+  // Function to close mobile menu when navigation link is clicked
+  const handleNavLinkClick = () => {
+    setIsMenuOpen(false);
+  };
+
   // Social profile links
   const instagramUrl = 'https://www.instagram.com/jandartravels/';
   const youtubeUrl = 'https://www.youtube.com/@jandartravels'; // Replace with your actual YouTube
@@ -27,12 +32,12 @@ const Header: React.FC = () => {
           <div className="flex items-center text-xs sm:text-sm text-gray-800">
             <div className="flex items-center pr-3">
               <i className="fas fa-phone text-primary mr-1"></i>
-              <span>+91-72900 00667</span>
+              <a href="tel:+919525853388" className="hover:text-primary transition-colors">+91- 95258 53388</a>
             </div>
             <div className="h-5 border-l border-gray-300 mx-2 opacity-40"></div>
             <div className="flex items-center pl-3">
               <i className="fas fa-envelope text-primary mr-1"></i>
-              <span>booking@jandartravels.com</span>
+              <a href="mailto:dharmendrajandar9525@gmail.com" className="hover:text-primary transition-colors">dharmendrajandar9525@gmail.com</a>
             </div>
           </div>
           {/* Right: Social Icons */}
@@ -54,11 +59,11 @@ const Header: React.FC = () => {
       </div>
 
       {/* Lower Division: Main Navbar */}
-      <div className="max-w-5xl mx-auto bg-white" style={{ minHeight: '80px' }}>
+      <div className="max-w-5xl mx-auto bg-white px-4 sm:px-6" style={{ minHeight: '80px' }}>
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <div className="flex items-center">
-            <Link to="/" className="text-2xl font-bold text-primary">
+          <div className="flex items-center -ml-2 sm:-ml-4">
+            <Link to="/" className="text-2xl font-bold text-primary" onClick={handleNavLinkClick}>
               <i className="fas fa-car text-3xl mr-2"></i>
               Jandar Travels
             </Link>
@@ -128,11 +133,11 @@ const Header: React.FC = () => {
             <div className="px-4 py-3 space-y-3 border-b border-gray-200">
               <div className="flex items-center py-2">
                 <i className="fas fa-phone text-primary mr-3"></i>
-                <span className="text-sm">+91-72900 00667</span>
+                <a href="tel:+919525853388" className="text-sm hover:text-primary transition-colors">+91- 95258 53388</a>
               </div>
               <div className="flex items-center py-2">
                 <i className="fas fa-envelope text-primary mr-3"></i>
-                <span className="text-sm">booking@jandartravels.com</span>
+                <a href="mailto:dharmendrajandar9525@gmail.com" className="text-sm hover:text-primary transition-colors">dharmendrajandar9525@gmail.com</a>
               </div>
               <div className="flex items-center py-2">
                 <a href={facebookUrl} target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-900 flex items-center mr-4">
@@ -147,36 +152,36 @@ const Header: React.FC = () => {
               </div>
             </div>
             <nav className="px-4 py-6 space-y-6">
-              <Link to="/" className="block text-gray-700 hover:text-primary font-medium">Home</Link>
-              <Link to="/about-us" className="block text-gray-700 hover:text-primary font-medium">About Us</Link>
+              <Link to="/" className="block text-gray-700 hover:text-primary font-medium" onClick={handleNavLinkClick}>Home</Link>
+              <Link to="/about-us" className="block text-gray-700 hover:text-primary font-medium" onClick={handleNavLinkClick}>About Us</Link>
               {/* Mobile Taxi Services */}
               <div className="space-y-3">
                 <div className="font-semibold text-gray-900 text-lg">Taxi Services</div>
-                <Link to="/vehicles/innova-crysta" className="block text-gray-700 hover:text-primary pl-4 py-2">• INNOVA CRYSTA</Link>
-                <Link to="/vehicles/innova-hybrid" className="block text-gray-700 hover:text-primary pl-4 py-2">• INNOVA HYBRID</Link>
-                <Link to="/vehicles/innova" className="block text-gray-700 hover:text-primary pl-4 py-2">• INNOVA</Link>
-                <Link to="/vehicles/ertiga" className="block text-gray-700 hover:text-primary pl-4 py-2">• ERTIGA</Link>
-                <Link to="/vehicles/swift-dzire" className="block text-gray-700 hover:text-primary pl-4 py-2">• Swift DZIRE</Link>
-                <Link to="/vehicles/etios" className="block text-gray-700 hover:text-primary pl-4 py-2">• Etios</Link>
-                <Link to="/vehicles/brezza" className="block text-gray-700 hover:text-primary pl-4 py-2">• Brezza</Link>
-                <Link to="/vehicles/bus" className="block text-gray-700 hover:text-primary pl-4 py-2">• Bus</Link>
+                <Link to="/vehicles/innova-crysta" className="block text-gray-700 hover:text-primary pl-4 py-2" onClick={handleNavLinkClick}>• INNOVA CRYSTA</Link>
+                <Link to="/vehicles/innova-hybrid" className="block text-gray-700 hover:text-primary pl-4 py-2" onClick={handleNavLinkClick}>• INNOVA HYBRID</Link>
+                <Link to="/vehicles/innova" className="block text-gray-700 hover:text-primary pl-4 py-2" onClick={handleNavLinkClick}>• INNOVA</Link>
+                <Link to="/vehicles/ertiga" className="block text-gray-700 hover:text-primary pl-4 py-2" onClick={handleNavLinkClick}>• ERTIGA</Link>
+                <Link to="/vehicles/swift-dzire" className="block text-gray-700 hover:text-primary pl-4 py-2" onClick={handleNavLinkClick}>• Swift DZIRE</Link>
+                <Link to="/vehicles/etios" className="block text-gray-700 hover:text-primary pl-4 py-2" onClick={handleNavLinkClick}>• Etios</Link>
+                <Link to="/vehicles/brezza" className="block text-gray-700 hover:text-primary pl-4 py-2" onClick={handleNavLinkClick}>• Brezza</Link>
+                <Link to="/vehicles/bus" className="block text-gray-700 hover:text-primary pl-4 py-2" onClick={handleNavLinkClick}>• Bus</Link>
               </div>
               {/* Mobile Tour Packages */}
               <div className="space-y-3">
                 <div className="font-semibold text-gray-900 text-lg">Tour Packages</div>
-                <Link to="/tours/delhi-local" className="block text-gray-700 hover:text-primary pl-4 py-2">• DELHI LOCAL TOUR</Link>
-                <Link to="/tours/same-day-agra" className="block text-gray-700 hover:text-primary pl-4 py-2">• SAME DAY AGRA TOUR</Link>
-                <Link to="/tours/shimla-manali" className="block text-gray-700 hover:text-primary pl-4 py-2">• SHIMLA MANALI TOUR</Link>
-                <Link to="/tours/jaipur" className="block text-gray-700 hover:text-primary pl-4 py-2">• JAIPUR TOUR PACKAGE</Link>
-                <Link to="/tours/golden-triangle" className="block text-gray-700 hover:text-primary pl-4 py-2">• GOLDEN TRIANGLE TOUR</Link>
-                <Link to="/tours/nainital" className="block text-gray-700 hover:text-primary pl-4 py-2">• NAINITAL TOUR PACKAGE</Link>
-                <Link to="/tours/haridwar-rishikesh" className="block text-gray-700 hover:text-primary pl-4 py-2">• HARIDWAR RISHIKESH PILGRIMAGE</Link>
-                <Link to="/tours/himachal" className="block text-gray-700 hover:text-primary pl-4 py-2">• HIMACHAL TOUR PACKAGE</Link>
-                <Link to="/tours/amritsar" className="block text-gray-700 hover:text-primary pl-4 py-2">• AMRITSAR TOUR PACKAGE</Link>
-                <Link to="/tours/chandigarh" className="block text-gray-700 hover:text-primary pl-4 py-2">• CHANDIGARH TOUR PACKAGE</Link>
+                <Link to="/tours/delhi-local" className="block text-gray-700 hover:text-primary pl-4 py-2" onClick={handleNavLinkClick}>• DELHI LOCAL TOUR</Link>
+                <Link to="/tours/same-day-agra" className="block text-gray-700 hover:text-primary pl-4 py-2" onClick={handleNavLinkClick}>• SAME DAY AGRA TOUR</Link>
+                <Link to="/tours/shimla-manali" className="block text-gray-700 hover:text-primary pl-4 py-2" onClick={handleNavLinkClick}>• SHIMLA MANALI TOUR</Link>
+                <Link to="/tours/jaipur" className="block text-gray-700 hover:text-primary pl-4 py-2" onClick={handleNavLinkClick}>• JAIPUR TOUR PACKAGE</Link>
+                <Link to="/tours/golden-triangle" className="block text-gray-700 hover:text-primary pl-4 py-2" onClick={handleNavLinkClick}>• GOLDEN TRIANGLE TOUR</Link>
+                <Link to="/tours/nainital" className="block text-gray-700 hover:text-primary pl-4 py-2" onClick={handleNavLinkClick}>• NAINITAL TOUR PACKAGE</Link>
+                <Link to="/tours/haridwar-rishikesh" className="block text-gray-700 hover:text-primary pl-4 py-2" onClick={handleNavLinkClick}>• HARIDWAR RISHIKESH PILGRIMAGE</Link>
+                <Link to="/tours/himachal" className="block text-gray-700 hover:text-primary pl-4 py-2" onClick={handleNavLinkClick}>• HIMACHAL TOUR PACKAGE</Link>
+                <Link to="/tours/amritsar" className="block text-gray-700 hover:text-primary pl-4 py-2" onClick={handleNavLinkClick}>• AMRITSAR TOUR PACKAGE</Link>
+                <Link to="/tours/chandigarh" className="block text-gray-700 hover:text-primary pl-4 py-2" onClick={handleNavLinkClick}>• CHANDIGARH TOUR PACKAGE</Link>
               </div>
-              <Link to="/contact-us" className="block text-gray-700 hover:text-primary font-medium">Contact</Link>
-              <Link to="/contact-us" className="btn-primary w-full mt-6">Book Now</Link>
+              <Link to="/contact-us" className="block text-gray-700 hover:text-primary font-medium" onClick={handleNavLinkClick}>Contact</Link>
+              <Link to="/contact-us" className="btn-primary w-full mt-6" onClick={handleNavLinkClick}>Book Now</Link>
             </nav>
           </div>
         )}

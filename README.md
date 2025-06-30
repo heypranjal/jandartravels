@@ -184,8 +184,8 @@ All content is stored in the component files and can be easily modified:
 
 ## Contact Information
 
-- **Phone**: +91-72900 00667
-- **Email**: booking@jandartravels.com
+- **Phone**: +91- 95258 53388
+- **Email**: dharmendrajandar9525@gmail.com
 - **Address**: Jandar Travels, Noida Sector - 31, Uttar Pradesh, India
 - **Website**: www.jandartravels.com
 

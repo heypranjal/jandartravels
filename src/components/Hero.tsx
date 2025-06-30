@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
   useEffect(() => {
     const splashTimer = setTimeout(() => {
       setShowSplash(false);
-    }, 2500);
+    }, 2000);
 
     return () => clearTimeout(splashTimer);
   }, []);
@@ -114,9 +114,9 @@ const Hero: React.FC = () => {
               <div className="text-lg sm:text-xl md:text-2xl font-bold mb-3 sm:mb-6">
                 NOIDA SECTOR - 31
               </div>
-              <div className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6 md:mb-8">
+              {/* <div className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6 md:mb-8">
                 PLEASE LET US KNOW HOW WE CAN HELP YOU
-              </div>
+              </div> */}
               
               {/* Centered Buttons */}
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
