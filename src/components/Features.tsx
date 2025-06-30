@@ -45,7 +45,7 @@ const Features: React.FC = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {features.map((feature, index) => (
-            <div key={index} className="card card-fill-hover text-center p-6 sm:p-8">
+            <div key={index} className="card text-center p-6 sm:p-8">
               <div className="text-4xl sm:text-5xl text-primary mb-4 sm:mb-6">
                 <i className={feature.icon}></i>
               </div>
