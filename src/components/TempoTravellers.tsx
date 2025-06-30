@@ -239,9 +239,9 @@ const TaxiFleet: React.FC = () => {
                     <Link to={taxi.route} className="btn-secondary text-center text-xs sm:text-sm py-2 sm:py-3">
                       View Details
                     </Link>
-                    <button className="btn-primary text-xs sm:text-sm py-2 sm:py-3">
+                    <Link to="/contact-us" className="btn-primary text-xs sm:text-sm py-2 sm:py-3">
                       Book Now
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>

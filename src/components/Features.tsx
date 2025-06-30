@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const Features: React.FC = () => {
   const navigate = useNavigate();
@@ -121,9 +121,9 @@ const Features: React.FC = () => {
                   <span className="text-sm sm:text-base">Noida Sector - 31, India</span>
                 </div>
               </div>
-              <button onClick={handleBookNow} className="btn-secondary w-full mt-4 sm:mt-6 text-sm sm:text-base py-3">
+              <Link to="/contact-us" className="btn-secondary w-full mt-4 sm:mt-6 text-sm sm:text-base py-3">
                 Book Now
-              </button>
+              </Link>
             </div>
           </div>
         </div>

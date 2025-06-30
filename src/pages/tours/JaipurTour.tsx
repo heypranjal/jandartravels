@@ -87,8 +87,13 @@ const JaipurTour: React.FC = () => {
           <h2 className="text-3xl font-bold mb-4">Ready to Book Jaipur Tour?</h2>
           <p className="text-xl text-pink-100 mb-8 max-w-2xl mx-auto">Experience the royal heritage of Jaipur. Contact us now for booking and availability.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link to="/contact-us" className="btn-secondary">Book Now</Link>
-            <a href="tel:+917290000667" className="btn-primary"><i className="fas fa-phone mr-2"></i>Call +91-72900 00667</a>
+            <Link to="/contact-us" className="btn-secondary">
+              Book Now
+            </Link>
+            <a href="tel:+917290000667" className="btn-primary">
+              <i className="fas fa-phone mr-2"></i>
+              Call +91-72900 00667
+            </a>
           </div>
         </div>
       </section>

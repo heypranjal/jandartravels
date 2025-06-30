@@ -98,12 +98,22 @@ const Footer: React.FC = () => {
 
       {/* Floating Action Buttons */}
       <div className="fixed bottom-4 sm:bottom-6 right-4 sm:right-6 flex flex-col space-y-2 sm:space-y-3 z-50">
-        <button className="bg-green-500 text-white p-2.5 sm:p-3 rounded-full shadow-lg hover:bg-green-600 transition-colors">
+        <a
+          href="https://wa.me/919525853388"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-green-500 text-white p-2.5 sm:p-3 rounded-full shadow-lg hover:bg-green-600 transition-colors flex items-center justify-center"
+          aria-label="Chat on WhatsApp"
+        >
           <i className="fab fa-whatsapp text-lg sm:text-xl"></i>
-        </button>
-        <button className="bg-primary text-white p-2.5 sm:p-3 rounded-full shadow-lg hover:bg-blue-700 transition-colors">
+        </a>
+        <a
+          href="tel:+917290000667"
+          className="bg-primary text-white p-2.5 sm:p-3 rounded-full shadow-lg hover:bg-blue-700 transition-colors flex items-center justify-center"
+          aria-label="Call Jandar Travels"
+        >
           <i className="fas fa-phone text-lg sm:text-xl"></i>
-        </button>
+        </a>
       </div>
     </footer>
   );

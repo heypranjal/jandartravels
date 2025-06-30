@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   const navigate = useNavigate();
@@ -13,21 +13,21 @@ const Hero: React.FC = () => {
   const carouselImages = [
     {
       id: 1,
-      image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      title: 'Premium Taxi Services',
-      subtitle: 'Luxury vehicles for your comfort'
+      image: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1200&q=80',
+      title: 'Desert Adventure',
+      subtitle: 'Brown camel on open field, Rann of Kutch, India'
     },
     {
       id: 2,
-      image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      title: 'Tour Packages',
-      subtitle: 'Explore India with our curated tours'
+      image: 'https://images.unsplash.com/photo-1599632740188-8a4f152a8342?w=1200&auto=format&fit=crop&q=80',
+      title: 'Incredible India',
+      subtitle: 'Travel moments across India'
     },
     {
       id: 3,
-      image: 'https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2025&q=80',
-      title: '24/7 Service',
-      subtitle: 'Always ready to serve you'
+      image: 'https://images.unsplash.com/photo-1595419293062-457444d419b8?w=1200&auto=format&fit=crop&q=80',
+      title: 'Scenic Journeys',
+      subtitle: 'Explore the beauty of India with Jandar Travels'
     }
   ];
 
@@ -55,10 +55,6 @@ const Hero: React.FC = () => {
     setCurrentSlide(index);
   };
 
-  const goToPrevious = () => {
-    setCurrentSlide((prev) => (prev - 1 + carouselImages.length) % carouselImages.length);
-  };
-
   const goToNext = () => {
     setCurrentSlide((prev) => (prev + 1) % carouselImages.length);
   };
@@ -83,18 +79,21 @@ const Hero: React.FC = () => {
         <div className="relative w-full h-full overflow-hidden">
           {/* Carousel Slides */}
           <div 
-            className="flex transition-transform duration-1000 ease-in-out h-full"
+            className="flex transition-transform duration-[2500ms] ease-in-out h-full"
             style={{ transform: `translateX(-${currentSlide * 100}%)` }}
           >
             {carouselImages.map((slide, index) => (
               <div key={slide.id} className="w-full h-full flex-shrink-0 relative">
                 {/* Background Image */}
-                <div 
-                  className="w-full h-full bg-cover bg-center bg-no-repeat"
-                  style={{ backgroundImage: `url(${slide.image})` }}
-                >
+                <div className="w-full h-full relative flex items-center justify-center bg-black">
+                  <img 
+                    src={slide.image} 
+                    alt={slide.title}
+                    className="w-full h-full object-contain object-center transition-all duration-500"
+                    style={{ maxHeight: '100vh', maxWidth: '100vw' }}
+                  />
                   {/* Overlay */}
-                  <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+                  <div className="absolute inset-0 bg-black bg-opacity-40"></div>
                 </div>
               </div>
             ))}
@@ -107,7 +106,7 @@ const Hero: React.FC = () => {
                 Premium Travel Services
               </div>
               <div className="text-xl sm:text-2xl md:text-3xl font-bold mb-2 sm:mb-4">
-                WELCOME IN
+                WELCOME TO
               </div>
               <div className="text-2xl sm:text-4xl md:text-6xl font-bold mb-2 sm:mb-4">
                 JANDAR TRAVELS
@@ -121,9 +120,9 @@ const Hero: React.FC = () => {
               
               {/* Centered Buttons */}
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-                <button className="btn-secondary text-sm sm:text-base md:text-lg px-6 sm:px-8 py-2 sm:py-3">
+                <Link to="/contact-us" className="btn-secondary text-sm sm:text-base md:text-lg px-6 sm:px-8 py-2 sm:py-3">
                   Book Taxi
-                </button>
+                </Link>
                 <button onClick={handleBookNow} className="btn-primary text-sm sm:text-base md:text-lg px-6 sm:px-8 py-2 sm:py-3">
                   Tour Packages
                 </button>
@@ -132,12 +131,6 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Navigation Arrows */}
-          <button
-            onClick={goToPrevious}
-            className="absolute left-2 sm:left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-50 text-white p-2 sm:p-3 rounded-full transition-all duration-300"
-          >
-            <i className="fas fa-chevron-left text-lg sm:text-xl"></i>
-          </button>
           <button
             onClick={goToNext}
             className="absolute right-2 sm:right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-50 text-white p-2 sm:p-3 rounded-full transition-all duration-300"
