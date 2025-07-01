@@ -20,8 +20,8 @@ const Header: React.FC = () => {
   };
 
   // Social profile links
-  const instagramUrl = 'https://www.instagram.com/jandartravels/';
-  const youtubeUrl = 'https://www.youtube.com/@jandartravels'; // Replace with your actual YouTube
+  const instagramUrl = 'https://www.instagram.com/dharmendrajandar/';
+  const youtubeUrl = 'https://www.youtube.com/@dharmendrajandarvlogs9223'; 
   const facebookUrl = 'https://www.facebook.com/dharmendrajandar/'; 
 
   return (
