@@ -187,61 +187,76 @@ const TaxiFleet: React.FC = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
           {taxiFleet.map((taxi, index) => (
-            <div key={index} className="card hover:scale-105 transition-transform duration-300 overflow-hidden">
-              <div className="relative h-40 sm:h-48 bg-gray-200 mb-3 sm:mb-4">
-                <img 
-                  src={taxi.image} 
-                  alt={taxi.name}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute top-2 right-2 bg-primary text-white px-2 py-1 rounded text-xs sm:text-sm font-semibold">
-                  {taxi.price}
-                </div>
-              </div>
-              
-              <div className="p-3 sm:p-4">
-                <div className="text-center mb-3 sm:mb-4">
-                  <h3 className="text-base sm:text-lg font-semibold text-primary mb-1 sm:mb-2">
-                    {taxi.name}
-                  </h3>
-                  <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1 sm:mb-2">
-                    {taxi.title}
-                  </h4>
-                  <div className="flex items-center justify-center mb-1 sm:mb-2">
-                    <div className="flex text-yellow-400">
-                      {[...Array(5)].map((_, i) => (
-                        <i key={i} className="fas fa-star text-xs sm:text-sm"></i>
-                      ))}
-                    </div>
-                    <span className="ml-2 text-xs sm:text-sm text-gray-600">({taxi.rating})</span>
+            <div
+              key={index} className="card hover:scale-105 transition-transform duration-300 overflow-hidden relative group"
+              style={{ zIndex: 0 }}
+            >
+              {/* Animated fill overlay */}
+              <span
+                className="absolute left-0 bottom-0 w-full h-0 group-hover:h-full transition-all duration-700 ease-in-out"
+                style={{
+                  background: 'rgb(223,165,80)',
+                  zIndex: 1,
+                  opacity: 0.85,
+                  transitionProperty: 'height',
+                }}
+              ></span>
+              <div className="relative z-10">
+                <div className="relative h-40 sm:h-48 bg-gray-200 mb-3 sm:mb-4">
+                  <img 
+                    src={taxi.image} 
+                    alt={taxi.name}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute top-2 right-2 bg-primary text-white px-2 py-1 rounded text-xs sm:text-sm font-semibold">
+                    {taxi.price}
                   </div>
-                  <p className="text-xs sm:text-sm text-gray-600 mb-0.5 sm:mb-1">
-                    {taxi.passengers}
-                  </p>
-                  <p className="text-xs sm:text-sm text-gray-600">
-                    {taxi.driver}
-                  </p>
                 </div>
+                
+                <div className="p-3 sm:p-4">
+                  <div className="text-center mb-3 sm:mb-4">
+                    <h3 className="text-base sm:text-lg font-semibold text-primary mb-1 sm:mb-2 group-hover:text-white transition-colors duration-700 relative z-10">
+                      {taxi.name}
+                    </h3>
+                    <h4 className="text-lg sm:text-xl font-bold text-gray-900 mb-1 sm:mb-2 group-hover:text-white transition-colors duration-700 relative z-10">
+                      {taxi.title}
+                    </h4>
+                    <div className="flex items-center justify-center mb-1 sm:mb-2">
+                      <div className="flex text-yellow-400">
+                        {[...Array(5)].map((_, i) => (
+                          <i key={i} className="fas fa-star text-xs sm:text-sm"></i>
+                        ))}
+                      </div>
+                      <span className="ml-2 text-xs sm:text-sm text-gray-600">({taxi.rating})</span>
+                    </div>
+                    <p className="text-xs sm:text-sm text-gray-600 mb-0.5 sm:mb-1 group-hover:text-white transition-colors duration-700 relative z-10">
+                      {taxi.passengers}
+                    </p>
+                    <p className="text-xs sm:text-sm text-gray-600 group-hover:text-white transition-colors duration-700 relative z-10">
+                      {taxi.driver}
+                    </p>
+                  </div>
 
-                <div className="border-t border-gray-200 pt-3 sm:pt-4 mb-3 sm:mb-4">
-                  <ul className="space-y-1 text-xs sm:text-sm text-gray-700">
-                    {taxi.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start">
-                        <i className="fas fa-check text-green-500 mr-2 mt-0.5 sm:mt-1 flex-shrink-0 text-xs"></i>
-                        <span className="leading-relaxed">{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                  <div className="border-t border-gray-200 pt-3 sm:pt-4 mb-3 sm:mb-4">
+                    <ul className="space-y-1 text-xs sm:text-sm text-gray-700 group-hover:text-white transition-colors duration-700 relative z-10">
+                      {taxi.features.map((feature, idx) => (
+                        <li key={idx} className="flex items-start">
+                          <i className="fas fa-check text-green-500 mr-2 mt-0.5 sm:mt-1 flex-shrink-0 text-xs"></i>
+                          <span className="leading-relaxed">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
 
-                <div className="border-t border-gray-200 pt-3 sm:pt-4">
-                  <div className="flex flex-col sm:flex-row gap-2">
-                    <Link to={taxi.route} className="btn-secondary text-center text-xs sm:text-sm py-2 sm:py-3">
-                      View Details
-                    </Link>
-                    <Link to="/contact-us" className="btn-primary text-center text-xs sm:text-sm py-2 sm:py-3">
-                      Book Now
-                    </Link>
+                  <div className="border-t border-gray-200 pt-3 sm:pt-4">
+                    <div className="flex flex-col sm:flex-row gap-2">
+                      <Link to={taxi.route} className="btn-secondary text-center text-xs sm:text-sm py-2 sm:py-3">
+                        View Details
+                      </Link>
+                      <Link to="/contact-us" className="btn-primary text-center text-xs sm:text-sm py-2 sm:py-3">
+                        Book Now
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>

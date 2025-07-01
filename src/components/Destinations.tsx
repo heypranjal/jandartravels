@@ -176,8 +176,21 @@ const Destinations: React.FC = () => {
           <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 sm:mb-8 text-center">Tour Packages</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
             {tourPackages.map((package_, index) => (
-              <div key={index} className="card overflow-hidden group">
-                <div className="relative overflow-hidden">
+              <div
+                key={index} className="card overflow-hidden group relative"
+                style={{ zIndex: 0 }}
+              >
+                {/* Animated fill overlay */}
+                <span
+                  className="absolute left-0 bottom-0 w-full h-0 group-hover:h-full transition-all duration-700 ease-in-out"
+                  style={{
+                    background: 'rgb(223,165,80)',
+                    zIndex: 1,
+                    opacity: 0.85,
+                    transitionProperty: 'height',
+                  }}
+                ></span>
+                <div className="relative z-10">
                   <img 
                     src={package_.image} 
                     alt={package_.name}
@@ -195,26 +208,26 @@ const Destinations: React.FC = () => {
                   </div>
                 </div>
                 <div className="p-4 sm:p-6">
-                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 group-hover:text-white transition-colors duration-700 relative z-10">
                     {package_.name}
                   </h3>
-                  <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 leading-relaxed">
+                  <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 leading-relaxed group-hover:text-white transition-colors duration-700 relative z-10">
                     {package_.description}
                   </p>
-                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center text-xs sm:text-sm text-gray-500 mb-3 sm:mb-4 space-y-1 sm:space-y-0">
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center text-xs sm:text-sm text-gray-500 mb-3 sm:mb-4 space-y-1 sm:space-y-0 group-hover:text-white transition-colors duration-700 relative z-10">
                     <span>
                       <i className="fas fa-clock mr-1"></i>
                       {package_.duration}
                     </span>
-                    <span className="font-semibold text-primary">
+                    <span className="font-semibold text-primary group-hover:text-white transition-colors duration-700">
                       {package_.price}
                     </span>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-2">
-                    <Link to={package_.route} className="btn-secondary text-center text-xs sm:text-sm py-2 sm:py-3">
+                    <Link to={package_.route} className="btn-secondary text-center text-xs sm:text-sm py-2 sm:py-3 group-hover:bg-white group-hover:text-primary transition-colors duration-700 relative z-10">
                       View Details
                     </Link>
-                    <Link to="/contact-us" className="btn-primary text-center text-xs sm:text-sm py-2 sm:py-3">
+                    <Link to="/contact-us" className="btn-primary text-center text-xs sm:text-sm py-2 sm:py-3 group-hover:bg-white group-hover:text-primary transition-colors duration-700 relative z-10">
                       Book Now
                     </Link>
                   </div>
