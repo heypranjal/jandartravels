@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import logo from '../assets/faviconLogo/jandarLogo.png';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -63,9 +64,9 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center -ml-2 sm:-ml-4">
-            <Link to="/" className="text-2xl font-bold text-primary" onClick={handleNavLinkClick}>
-              <i className="fas fa-car text-3xl mr-2"></i>
-              Jandar Travels
+            <Link to="/" className="flex items-center" onClick={handleNavLinkClick}>
+              <img src={logo} alt="Jandar Travels Logo" className="h-12 w-auto mr-2" />
+              <span className="text-2xl font-bold text-primary">Jandar Travels</span>
             </Link>
           </div>
 

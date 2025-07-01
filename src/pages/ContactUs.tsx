@@ -293,13 +293,18 @@ const ContactUs: React.FC = () => {
             <p className="text-gray-600">Visit our office in Noida Sector-31</p>
           </div>
           <div className="bg-white rounded-lg shadow-lg p-4">
-            <div className="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg flex items-center justify-center">
-              <div className="text-center">
-                <i className="fas fa-map-marked-alt text-6xl text-gray-400 mb-4"></i>
-                <p className="text-gray-600">Interactive Map Coming Soon</p>
-                <p className="text-sm text-gray-500 mt-2">Noida Sector-31, Uttar Pradesh, India</p>
-              </div>
-            </div>
+          <div className="aspect-w-16 aspect-h-9 bg-gray-200 rounded-lg overflow-hidden">
+  <iframe
+ src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.766173244969!2d77.3397349!3d28.576783400000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce579ff2d5e1b%3A0xcfdffeacd969ec36!2sJandar%20Travels!5e0!3m2!1sen!2sin!4v1751384276723!5m2!1sen!2sin" 
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    allowFullScreen={true}
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    title="Jandar Travels Location"
+  ></iframe>
+</div>
           </div>
         </div>
       </section>
