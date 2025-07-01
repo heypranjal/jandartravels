@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import splashImage from '../assets/faviconLogo/splashJandar.jpeg';
 
 const Hero: React.FC = () => {
   const navigate = useNavigate();
@@ -64,12 +65,11 @@ const Hero: React.FC = () => {
       {/* Full Screen Splash Screen */}
       {showSplash && (
         <div className="fixed inset-0 z-50 bg-gradient-to-r from-blue-900 to-blue-700 flex items-center justify-center">
-          <div className="text-center text-white px-4">
-            <h1 className="text-3xl sm:text-5xl md:text-7xl font-bold mb-3 sm:mb-4 animate-pulse">
-              Welcome to Jandar Travels
-            </h1>
-            <div className="w-12 sm:w-16 h-1 bg-white mx-auto animate-ping"></div>
-          </div>
+          <img 
+            src={splashImage} 
+            alt="Jandar Travels Splash" 
+            className="h-40 w-40 sm:h-56 sm:w-56 md:h-72 md:w-72 rounded-full object-cover animate-pulse shadow-2xl border-4 border-white" 
+          />
         </div>
       )}
 
