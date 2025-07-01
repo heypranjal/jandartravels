@@ -86,8 +86,8 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-700 mt-10 sm:mt-12 pt-6 sm:pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-6">
-              <Link to="/privacy" className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Privacy Policy</Link>
-              <Link to="/terms" className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Terms And Conditions</Link>
+              <Link to="/privacy-policy" className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Privacy Policy</Link>
+              <Link to="/terms-conditions" className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Terms And Conditions</Link>
             </div>
             <div className="text-gray-300 text-sm sm:text-base text-center sm:text-left">
               Copyright @ 2025 Jandar Travels All rights reserved.
