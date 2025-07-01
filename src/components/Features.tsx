@@ -45,14 +45,37 @@ const Features: React.FC = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {features.map((feature, index) => (
-            <div key={index} className="card text-center p-6 sm:p-8">
-              <div className="text-4xl sm:text-5xl text-primary mb-4 sm:mb-6">
+            <div
+              key={index}
+              className="card text-center p-6 sm:p-8 relative overflow-hidden group"
+              style={{ zIndex: 0 }}
+            >
+              {/* Animated fill overlay */}
+              <span
+                className="absolute left-0 bottom-0 w-full h-0 group-hover:h-full transition-all duration-700 ease-in-out"
+                style={{
+                  background: 'rgb(223,165,80)',
+                  zIndex: 1,
+                  opacity: 0.85,
+                  transitionProperty: 'height',
+                }}
+              ></span>
+              <div
+                className="text-4xl sm:text-5xl text-primary mb-4 sm:mb-6 relative"
+                style={{ zIndex: 2 }}
+              >
                 <i className={feature.icon}></i>
               </div>
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
+              <h3
+                className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4 relative group-hover:text-white transition-colors duration-700"
+                style={{ zIndex: 2 }}
+              >
                 {feature.title}
               </h3>
-              <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+              <p
+                className="text-sm sm:text-base text-gray-600 leading-relaxed relative group-hover:text-white transition-colors duration-700"
+                style={{ zIndex: 2 }}
+              >
                 {feature.description}
               </p>
             </div>
