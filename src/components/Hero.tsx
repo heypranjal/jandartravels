@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
   useEffect(() => {
     const splashTimer = setTimeout(() => {
       setShowSplash(false);
-    }, 2000);
+    }, 2500);
 
     return () => clearTimeout(splashTimer);
   }, []);
@@ -68,7 +68,7 @@ const Hero: React.FC = () => {
           <img 
             src={splashImage} 
             alt="Jandar Travels Splash" 
-            className="h-40 w-40 sm:h-56 sm:w-56 md:h-72 md:w-72 rounded-full object-cover animate-pulse shadow-2xl border-4 border-white" 
+            className="h-80 w-80 sm:h-96 sm:w-96 md:h-[32rem] md:w-[32rem] rounded-full object-cover animate-pulse shadow-2xl border-4 border-white" 
           />
         </div>
       )}
