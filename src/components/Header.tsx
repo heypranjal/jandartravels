@@ -22,7 +22,7 @@ const Header: React.FC = () => {
   // Social profile links
   const instagramUrl = 'https://www.instagram.com/jandartravels/';
   const youtubeUrl = 'https://www.youtube.com/@jandartravels'; // Replace with your actual YouTube
-  const facebookUrl = 'https://www.facebook.com/jandartravels'; // Replace with your actual Facebook
+  const facebookUrl = 'https://www.facebook.com/dharmendrajandar/'; 
 
   return (
     <header className="bg-white shadow-lg fixed w-full top-0 z-50">
@@ -60,10 +60,10 @@ const Header: React.FC = () => {
       </div>
 
       {/* Lower Division: Main Navbar */}
-      <div className="max-w-5xl mx-auto bg-white px-4 sm:px-6" style={{ minHeight: '80px' }}>
+      <div className="bg-white px-4 sm:px-6" style={{ minHeight: '80px' }}>
         <div className="flex justify-between items-center py-4">
-          {/* Logo */}
-          <div className="flex items-center -ml-2 sm:-ml-4">
+          {/* Logo - Truly left-aligned */}
+          <div className="flex items-center">
             <Link to="/" className="flex items-center" onClick={handleNavLinkClick}>
               <img src={logo} alt="Jandar Travels Logo" className="h-12 w-auto mr-2" />
               <span className="text-2xl font-bold text-primary">Jandar Travels</span>
