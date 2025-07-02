@@ -184,7 +184,7 @@ const Destinations: React.FC = () => {
                 <span
                   className="absolute left-0 bottom-0 w-full h-0 group-hover:h-full transition-all duration-700 ease-in-out"
                   style={{
-                    background: 'rgb(223,165,80)',
+                    background: 'rgb(210,140,40)',
                     zIndex: 1,
                     opacity: 0.85,
                     transitionProperty: 'height',
@@ -220,7 +220,7 @@ const Destinations: React.FC = () => {
                       {package_.duration}
                     </span>
                     <span className="font-semibold text-primary group-hover:text-white transition-colors duration-700">
-                      {package_.price}
+                      Contact for pricing
                     </span>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-2">
@@ -238,7 +238,7 @@ const Destinations: React.FC = () => {
         </div>
 
         {/* Outstation Destinations */}
-        <div className="bg-gradient-to-r from-primary to-blue-600 rounded-lg p-6 sm:p-8 text-white mb-12 sm:mb-16">
+        <div className="bg-secondary text-white rounded-lg p-6 sm:p-8 mb-12 sm:mb-16">
           <h3 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-center">
             Outstation Popular Destinations
           </h3>
@@ -252,12 +252,12 @@ const Destinations: React.FC = () => {
         </div>
 
         {/* Other Routes */}
-        <div className="bg-gray-100 rounded-lg p-6 sm:p-8 mb-12 sm:mb-16">
-          <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6 text-center">Other Routes</h3>
+        <div className="bg-secondary text-white rounded-lg p-6 sm:p-8 mb-12 sm:mb-16">
+          <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4 sm:mb-6 text-center">Other Routes</h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
             {otherRoutes.map((route, index) => (
-              <Link key={index} to="/contact-us" className="bg-white rounded-lg p-3 sm:p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-                <span className="font-semibold text-gray-800 text-sm sm:text-base leading-relaxed">{route}</span>
+              <Link key={index} to="/contact-us" className="bg-white/20 rounded-lg p-3 sm:p-4 text-center hover:bg-white/30 transition-colors cursor-pointer">
+                <span className="font-semibold text-white text-sm sm:text-base leading-relaxed">{route}</span>
               </Link>
             ))}
           </div>

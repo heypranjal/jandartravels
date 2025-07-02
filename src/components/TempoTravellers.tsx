@@ -14,7 +14,6 @@ const TaxiFleet: React.FC = () => {
       seating: '7 Passenger + 1 Driver',
       madeBy: 'Toyota',
       price: 'Premium',
-      perKm: 'Rate',
       image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
       features: [
         'Seating : 7 Passenger + 1 Driver',
@@ -35,7 +34,6 @@ const TaxiFleet: React.FC = () => {
       seating: '7 Passenger + 1 Driver',
       madeBy: 'Toyota',
       price: 'Premium',
-      perKm: 'Rate',
       image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
       features: [
         'Seating : 7 Passenger + 1 Driver',
@@ -56,7 +54,6 @@ const TaxiFleet: React.FC = () => {
       seating: '7 Passenger + 1 Driver',
       madeBy: 'Toyota',
       price: 'Standard',
-      perKm: 'Rate',
       image: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
       features: [
         'Seating : 7 Passenger + 1 Driver',
@@ -77,7 +74,6 @@ const TaxiFleet: React.FC = () => {
       seating: '7 Passenger + 1 Driver',
       madeBy: 'Maruti Suzuki',
       price: 'Economical',
-      perKm: 'Rate',
       image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
       features: [
         'Seating : 7 Passenger + 1 Driver',
@@ -98,7 +94,6 @@ const TaxiFleet: React.FC = () => {
       seating: '5 Passenger + 1 Driver',
       madeBy: 'Maruti Suzuki',
       price: 'Economical',
-      perKm: 'Rate',
       image: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
       features: [
         'Seating : 5 Passenger + 1 Driver',
@@ -119,7 +114,6 @@ const TaxiFleet: React.FC = () => {
       seating: '5 Passenger + 1 Driver',
       madeBy: 'Toyota',
       price: 'Standard',
-      perKm: 'Rate',
       image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
       features: [
         'Seating : 5 Passenger + 1 Driver',
@@ -140,7 +134,6 @@ const TaxiFleet: React.FC = () => {
       seating: '5 Passenger + 1 Driver',
       madeBy: 'Maruti Suzuki',
       price: 'Standard',
-      perKm: 'Rate',
       image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
       features: [
         'Seating : 5 Passenger + 1 Driver',
@@ -161,7 +154,6 @@ const TaxiFleet: React.FC = () => {
       seating: '20+ Passenger + 1 Driver',
       madeBy: 'Multiple Brands',
       price: 'Group',
-      perKm: 'Rate',
       image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
       features: [
         'Seating : 20+ Passenger + 1 Driver',
@@ -195,7 +187,7 @@ const TaxiFleet: React.FC = () => {
               <span
                 className="absolute left-0 bottom-0 w-full h-0 group-hover:h-full transition-all duration-700 ease-in-out"
                 style={{
-                  background: 'rgb(223,165,80)',
+                  background: 'rgb(210,140,40)',
                   zIndex: 1,
                   opacity: 0.85,
                   transitionProperty: 'height',
@@ -228,6 +220,7 @@ const TaxiFleet: React.FC = () => {
                         ))}
                       </div>
                       <span className="ml-2 text-xs sm:text-sm text-gray-600">({taxi.rating})</span>
+                      <span className="block text-xs sm:text-sm text-primary font-semibold mt-1">Contact to get information</span>
                     </div>
                     <p className="text-xs sm:text-sm text-gray-600 mb-0.5 sm:mb-1 group-hover:text-white transition-colors duration-700 relative z-10">
                       {taxi.passengers}

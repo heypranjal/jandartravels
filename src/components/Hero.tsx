@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
   useEffect(() => {
     const splashTimer = setTimeout(() => {
       setShowSplash(false);
-    }, 2500);
+    }, 1000);
 
     return () => clearTimeout(splashTimer);
   }, []);

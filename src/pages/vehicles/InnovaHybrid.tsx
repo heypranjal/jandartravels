@@ -54,10 +54,10 @@ const InnovaHybrid: React.FC = () => {
                     </div>
                   </div>
                   <div className="flex items-center">
-                    <i className="fas fa-rupee-sign text-primary mr-3 text-xl"></i>
+                    <i className="fas fa-info-circle text-primary mr-3 text-xl"></i>
                     <div>
-                      <h3 className="font-semibold text-gray-900">Starting Price</h3>
-                      <p className="text-gray-600">₹12 per km</p>
+                      <h3 className="font-semibold text-gray-900">Pricing</h3>
+                      <p className="text-gray-600">Contact to get information</p>
                     </div>
                   </div>
                 </div>
@@ -125,7 +125,7 @@ const InnovaHybrid: React.FC = () => {
             </div>
             <div className="bg-white rounded-lg shadow-lg p-6 text-center">
               <h3 className="text-xl font-bold text-gray-900 mb-4">Outstation</h3>
-              <p className="text-3xl font-bold text-green-600 mb-4">₹13/km</p>
+              <p className="text-3xl font-bold text-green-600 mb-4">Contact to get information</p>
               <p className="text-gray-600 mb-4">Long distance travel</p>
               <ul className="text-sm text-gray-600 space-y-2">
                 <li>• Minimum 200 km</li>
@@ -135,7 +135,7 @@ const InnovaHybrid: React.FC = () => {
             </div>
             <div className="bg-white rounded-lg shadow-lg p-6 text-center">
               <h3 className="text-xl font-bold text-gray-900 mb-4">Airport Transfer</h3>
-              <p className="text-3xl font-bold text-green-600 mb-4">₹26/km</p>
+              <p className="text-3xl font-bold text-green-600 mb-4">Contact to get information</p>
               <p className="text-gray-600 mb-4">Airport pickup/drop</p>
               <ul className="text-sm text-gray-600 space-y-2">
                 <li>• Meet & greet service</li>

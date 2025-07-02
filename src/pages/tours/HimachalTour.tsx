@@ -59,10 +59,10 @@ const HimachalTour: React.FC = () => {
                     </div>
                   </div>
                   <div className="flex items-center">
-                    <i className="fas fa-rupee-sign text-primary mr-3 text-xl"></i>
+                    <i className="fas fa-info-circle text-primary mr-3 text-xl"></i>
                     <div>
-                      <h3 className="font-semibold text-gray-900">Starting Price</h3>
-                      <p className="text-gray-600">₹20,000</p>
+                      <h3 className="font-semibold text-gray-900">Pricing</h3>
+                      <p className="text-gray-600">Contact to get information</p>
                     </div>
                   </div>
                 </div>

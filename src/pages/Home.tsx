@@ -9,8 +9,9 @@ const Home: React.FC = () => {
   return (
     <div>
       <Hero />
-      <Services />
       <TaxiFleet />
+      <Services />
+
       <Features />
       <Destinations />
     </div>

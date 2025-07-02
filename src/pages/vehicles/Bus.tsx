@@ -97,16 +97,25 @@ const Bus: React.FC = () => {
           </div>
         </div>
       </section>
+      {/* <section className="section-padding bg-gray-50">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Pricing Information</h2>
+            <p className="text-xl text-gray-600">Contact to get information</p>
+          </div>
+        </div>
+      </section> */}
       <section className="section-padding bg-gray-50">
         <div className="container-custom">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Pricing Information</h2>
-            <p className="text-xl text-gray-600">Best rates for group travel</p>
+            <p className="text-xl text-gray-600">Best rates for group travel</p> <br />
+            <p className="text-xl text-gray-600">Contact to get information</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white rounded-lg shadow-lg p-6 text-center">
               <h3 className="text-xl font-bold text-gray-900 mb-4">Local Travel</h3>
-              <p className="text-3xl font-bold text-blue-600 mb-4">₹40/km</p>
+              <p className="text-3xl font-bold text-blue-600 mb-4">Contact to get information</p>
               <p className="text-gray-600 mb-4">Within city limits</p>
               <ul className="text-sm text-gray-600 space-y-2">
                 <li>• Minimum 4 hours</li>
@@ -116,7 +125,7 @@ const Bus: React.FC = () => {
             </div>
             <div className="bg-white rounded-lg shadow-lg p-6 text-center">
               <h3 className="text-xl font-bold text-gray-900 mb-4">Outstation</h3>
-              <p className="text-3xl font-bold text-blue-600 mb-4">₹32/km</p>
+              <p className="text-3xl font-bold text-blue-600 mb-4">Contact to get information</p>
               <p className="text-gray-600 mb-4">Long distance travel</p>
               <ul className="text-sm text-gray-600 space-y-2">
                 <li>• Minimum 200 km</li>
@@ -126,7 +135,7 @@ const Bus: React.FC = () => {
             </div>
             <div className="bg-white rounded-lg shadow-lg p-6 text-center">
               <h3 className="text-xl font-bold text-gray-900 mb-4">Airport Transfer</h3>
-              <p className="text-3xl font-bold text-blue-600 mb-4">₹50/km</p>
+              <p className="text-3xl font-bold text-blue-600 mb-4">Contact to get information</p>
               <p className="text-gray-600 mb-4">Airport pickup/drop</p>
               <ul className="text-sm text-gray-600 space-y-2">
                 <li>• Meet & greet service</li>

@@ -32,7 +32,7 @@ const Brezza: React.FC = () => {
                     <i className="fas fa-users text-primary mr-3 text-xl"></i>
                     <div>
                       <h3 className="font-semibold text-gray-900">Seating Capacity</h3>
-                      <p className="text-gray-600">5 Passengers + 1 Driver</p>
+                      <p className="text-gray-600">4 Passengers + 1 Driver</p>
                     </div>
                   </div>
                   <div className="flex items-center">
@@ -42,11 +42,18 @@ const Brezza: React.FC = () => {
                       <p className="text-gray-600">Compact SUV</p>
                     </div>
                   </div>
-                  <div className="flex items-center">
+                  {/* <div className="flex items-center">
                     <i className="fas fa-rupee-sign text-primary mr-3 text-xl"></i>
                     <div>
-                      <h3 className="font-semibold text-gray-900">Starting Price</h3>
-                      <p className="text-gray-600">₹11 per km</p>
+                      <h3 className="font-semibold text-gray-900"></h3>
+                      <p className="text-gray-600"></p>
+                    </div>
+                  </div> */}
+                   <div className="flex items-center">
+                    <i className="fas fa-info-circle text-primary mr-3 text-xl"></i>
+                    <div>
+                      <h3 className="font-semibold text-gray-900">Pricing</h3>
+                      <p className="text-gray-600">Contact to get information</p>
                     </div>
                   </div>
                 </div>
@@ -63,6 +70,14 @@ const Brezza: React.FC = () => {
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="section-padding bg-gray-50">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Pricing Information</h2>
+            <p className="text-xl text-gray-600">Contact to get information</p>
           </div>
         </div>
       </section>
