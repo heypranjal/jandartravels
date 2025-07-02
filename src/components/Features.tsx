@@ -54,7 +54,7 @@ const Features: React.FC = () => {
               <span
                 className="absolute left-0 bottom-0 w-full h-0 group-hover:h-full transition-all duration-700 ease-in-out"
                 style={{
-                  background: 'rgb(223,165,80)',
+                  background: 'rgb(210,140,40)',
                   zIndex: 1,
                   opacity: 0.85,
                   transitionProperty: 'height',
