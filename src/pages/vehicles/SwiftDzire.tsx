@@ -51,7 +51,7 @@ const SwiftDzire: React.FC = () => {
                     <i className="fas fa-users text-primary mr-3 text-xl"></i>
                     <div>
                       <h3 className="font-semibold text-gray-900">Seating Capacity</h3>
-                      <p className="text-gray-600">5 Passengers + 1 Driver</p>
+                      <p className="text-gray-600">4 Passengers + 1 Driver</p>
                     </div>
                   </div>
                   <div className="flex items-center">
