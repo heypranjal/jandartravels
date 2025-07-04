@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import alikGhosh from '../../assets/places/shimla manali/alik-ghosh-9yIO-zQe35g-unsplash.jpg';
+import barbareKacharava from '../../assets/places/shimla manali/barbare-kacharava-lozEfheL82k-unsplash.jpg';
+import shyamRaj from '../../assets/places/shimla manali/shyam-raj-vishwakarma-a8AdBuw41kQ-unsplash.jpg';
 
 const ShimlaManaliTour: React.FC = () => {
   return (
@@ -18,23 +21,23 @@ const ShimlaManaliTour: React.FC = () => {
             <div className="space-y-6">
               <div className="bg-gray-200 rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                  alt="Shimla Manali Tour"
+                  src={alikGhosh} 
+                  alt="Shimla Hills by Alik Ghosh"
                   className="w-full h-64 object-cover"
                 />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-gray-200 rounded-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2025&q=80" 
-                    alt="Mountain View"
+                    src={barbareKacharava} 
+                    alt="Manali Valley by Barbare Kacharava"
                     className="w-full h-32 object-cover"
                   />
                 </div>
                 <div className="bg-gray-200 rounded-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" 
-                    alt="Hill Station"
+                    src={shyamRaj} 
+                    alt="Himalayan Landscape by Shyam Raj Vishwakarma"
                     className="w-full h-32 object-cover"
                   />
                 </div>

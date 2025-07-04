@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import priyadarshiKinth from '../../assets/places/nanital/priyadarshi-kinth-V56BhBV_SCE-unsplash.jpg';
+import abhishekRoyal from '../../assets/places/nanital/abhishek-royal-S0TUYf1vhg8-unsplash.jpg';
+import anubhavRana from '../../assets/places/nanital/anubhav-rana-9qmTCba-oZE-unsplash.jpg';
 
 const NainitalTour: React.FC = () => {
   return (
@@ -18,23 +21,23 @@ const NainitalTour: React.FC = () => {
             <div className="space-y-6">
               <div className="bg-gray-200 rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                  alt="Nainital Tour"
+                  src={priyadarshiKinth} 
+                  alt="Naini Lake, Nainital by Priyadarshi Kinth"
                   className="w-full h-64 object-cover"
                 />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-gray-200 rounded-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2025&q=80" 
-                    alt="Lake View"
+                    src={abhishekRoyal} 
+                    alt="Mall Road, Nainital by Abhishek Royal"
                     className="w-full h-32 object-cover"
                   />
                 </div>
                 <div className="bg-gray-200 rounded-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" 
-                    alt="Mountain View"
+                    src={anubhavRana} 
+                    alt="Hills of Nainital by Anubhav Rana"
                     className="w-full h-32 object-cover"
                   />
                 </div>
