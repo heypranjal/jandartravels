@@ -1,5 +1,14 @@
 import React from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import delhiImg from '../assets/places/delhi/brijender-dua-pRmAcSOP8Y0-unsplash.jpg';
+import agraImg from '../assets/places/agra/arun-geetha-viswanathan-8goGYCLzrLs-unsplash.jpg';
+import shimlaManaliImg from '../assets/places/shimla manali/alik-ghosh-9yIO-zQe35g-unsplash.jpg';
+import jaipurImg from '../assets/places/jaipur/vg-bingi-Z9s5Tt0MHKg-unsplash.jpg';
+import nainitalImg from '../assets/places/nanital/priyadarshi-kinth-V56BhBV_SCE-unsplash.jpg';
+import haridwarRishikeshImg from '../assets/places/haridwar rishikesh/shreyashka-maharjan-tPXP7U4IA40-unsplash.jpg';
+import himachalImg from '../assets/places/himachal/anuj-rawat-TQLqUmQQF2o-unsplash.jpg';
+import amritsarImg from '../assets/places/amritsar/ravi-n-jha-aU9yXmIwfkw-unsplash.jpg';
+import chandigarhImg from '../assets/places/chandigarh/arpan-goyal-TiHXNVTFYAU-unsplash.jpg';
 
 const Destinations: React.FC = () => {
   const navigate = useNavigate();
@@ -12,7 +21,7 @@ const Destinations: React.FC = () => {
     {
       name: 'DELHI LOCAL TOUR',
       route: '/tours/delhi-local',
-      image: 'https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2025&q=80',
+      image: delhiImg,
       description: 'Explore the capital city with our comprehensive Delhi local tour package.',
       duration: '1 Day',
       price: 'Starting from ₹2,000'
@@ -20,7 +29,7 @@ const Destinations: React.FC = () => {
     {
       name: 'SAME DAY AGRA TOUR PACKAGE',
       route: '/tours/same-day-agra',
-      image: 'https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80',
+      image: agraImg,
       description: 'Visit the iconic Taj Mahal and Agra Fort in a single day trip.',
       duration: '1 Day',
       price: 'Starting from ₹3,500'
@@ -28,7 +37,7 @@ const Destinations: React.FC = () => {
     {
       name: 'SHIMLA MANALI TOUR',
       route: '/tours/shimla-manali',
-      image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      image: shimlaManaliImg,
       description: 'Experience the beauty of Himachal Pradesh with Shimla and Manali tour.',
       duration: '5-7 Days',
       price: 'Starting from ₹15,000'
@@ -36,7 +45,7 @@ const Destinations: React.FC = () => {
     {
       name: 'JAIPUR TOUR PACKAGE',
       route: '/tours/jaipur',
-      image: 'https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      image: jaipurImg,
       description: 'Discover the Pink City with our comprehensive Jaipur tour package.',
       duration: '2-3 Days',
       price: 'Starting from ₹8,000'
@@ -44,7 +53,7 @@ const Destinations: React.FC = () => {
     {
       name: 'GOLDEN TRIANGLE TOUR',
       route: '/tours/golden-triangle',
-      image: 'https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2025&q=80',
+      image: agraImg,
       description: 'Explore Delhi, Agra, and Jaipur in the classic Golden Triangle tour.',
       duration: '5-6 Days',
       price: 'Starting from ₹18,000'
@@ -52,7 +61,7 @@ const Destinations: React.FC = () => {
     {
       name: 'NAINITAL TOUR PACKAGE',
       route: '/tours/nainital',
-      image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      image: nainitalImg,
       description: 'Visit the beautiful lake city of Nainital in Uttarakhand.',
       duration: '3-4 Days',
       price: 'Starting from ₹10,000'
@@ -60,7 +69,7 @@ const Destinations: React.FC = () => {
     {
       name: 'HARIDWAR RISHIKESH PILGRIMAGE TOUR',
       route: '/tours/haridwar-rishikesh',
-      image: 'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      image: haridwarRishikeshImg,
       description: 'Spiritual journey to the holy cities of Haridwar and Rishikesh.',
       duration: '3-4 Days',
       price: 'Starting from ₹12,000'
@@ -68,7 +77,7 @@ const Destinations: React.FC = () => {
     {
       name: 'HIMACHAL TOUR PACKAGE',
       route: '/tours/himachal',
-      image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      image: himachalImg,
       description: 'Comprehensive tour of Himachal Pradesh including multiple hill stations.',
       duration: '7-10 Days',
       price: 'Starting from ₹25,000'
@@ -76,7 +85,7 @@ const Destinations: React.FC = () => {
     {
       name: 'AMRITSAR TOUR PACKAGE',
       route: '/tours/amritsar',
-      image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      image: amritsarImg,
       description: 'Visit the holy city of Amritsar and the Golden Temple.',
       duration: '2-3 Days',
       price: 'Starting from ₹8,000'
@@ -84,7 +93,7 @@ const Destinations: React.FC = () => {
     {
       name: 'CHANDIGARH TOUR PACKAGE',
       route: '/tours/chandigarh',
-      image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      image: chandigarhImg,
       description: 'Visit the beautiful planned city of Chandigarh.',
       duration: '1-2 Days',
       price: 'Starting from ₹5,000'
