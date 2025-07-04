@@ -1,5 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import innovaImg from '../assets/vehicles/innova.jpeg';
+import ertigaImg from '../assets/vehicles/ertiga.jpg';
+import swiftImg from '../assets/vehicles/swift.avif';
+import etiosImg from '../assets/vehicles/etios.jpg';
+import breezaImg from '../assets/vehicles/breeza.jpg';
+import busImg from '../assets/vehicles/bus.avif';
 
 const TaxiFleet: React.FC = () => {
   const taxiFleet = [
@@ -14,7 +20,7 @@ const TaxiFleet: React.FC = () => {
       seating: '7 Passenger + 1 Driver',
       madeBy: 'Toyota',
       price: 'Premium',
-      image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      image: innovaImg,
       features: [
         'Seating : 7 Passenger + 1 Driver',
         'Made By : Toyota',
@@ -34,7 +40,7 @@ const TaxiFleet: React.FC = () => {
       seating: '7 Passenger + 1 Driver',
       madeBy: 'Toyota',
       price: 'Premium',
-      image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      image: innovaImg,
       features: [
         'Seating : 7 Passenger + 1 Driver',
         'Made By : Toyota',
@@ -54,7 +60,7 @@ const TaxiFleet: React.FC = () => {
       seating: '7 Passenger + 1 Driver',
       madeBy: 'Toyota',
       price: 'Standard',
-      image: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      image: innovaImg,
       features: [
         'Seating : 7 Passenger + 1 Driver',
         'Made By : Toyota',
@@ -74,7 +80,7 @@ const TaxiFleet: React.FC = () => {
       seating: '6 Passenger + 1 Driver',
       madeBy: 'Maruti Suzuki',
       price: 'Economical',
-      image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      image: ertigaImg,
       features: [
         'Seating : 6 Passenger + 1 Driver',
         'Made By : Maruti Suzuki',
@@ -94,7 +100,7 @@ const TaxiFleet: React.FC = () => {
       seating: '4 Passenger + 1 Driver',
       madeBy: 'Maruti Suzuki',
       price: 'Economical',
-      image: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      image: swiftImg,
       features: [
         'Seating : 4 Passenger + 1 Driver',
         'Made By : Maruti Suzuki',
@@ -114,7 +120,7 @@ const TaxiFleet: React.FC = () => {
       seating: '4 Passenger + 1 Driver',
       madeBy: 'Toyota',
       price: 'Standard',
-      image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      image: etiosImg,
       features: [
         'Seating : 4 Passenger + 1 Driver',
         'Made By : Toyota',
@@ -134,7 +140,7 @@ const TaxiFleet: React.FC = () => {
       seating: '4 Passenger + 1 Driver',
       madeBy: 'Maruti Suzuki',
       price: 'Standard',
-      image: 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      image: breezaImg,
       features: [
         'Seating : 4 Passenger + 1 Driver',
         'Made By : Maruti Suzuki',
@@ -154,7 +160,7 @@ const TaxiFleet: React.FC = () => {
       seating: '20+ Passenger + 1 Driver',
       madeBy: 'Multiple Brands',
       price: 'Group',
-      image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      image: busImg,
       features: [
         'Seating : 20+ Passenger + 1 Driver',
         'Made By : Multiple Brands',
