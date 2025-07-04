@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import busImg from '../../assets/vehicles/bus.avif';
 
 const Bus: React.FC = () => {
   return (
@@ -25,8 +26,8 @@ const Bus: React.FC = () => {
               </div>
               <div className="bg-gray-200 rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                  alt="Luxury Bus"
+                  src={busImg} 
+                  alt="Luxury Bus - Jandar Travels"
                   className="w-full h-80 object-cover"
                 />
               </div>

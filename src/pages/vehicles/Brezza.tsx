@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import breezaImg from '../../assets/vehicles/breeza.jpg';
 
 const Brezza: React.FC = () => {
   return (
@@ -18,8 +19,8 @@ const Brezza: React.FC = () => {
             <div className="space-y-6">
               <div className="bg-gray-200 rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                  alt="Maruti Brezza"
+                  src={breezaImg} 
+                  alt="Maruti Brezza - Jandar Travels"
                   className="w-full h-80 object-cover"
                 />
               </div>

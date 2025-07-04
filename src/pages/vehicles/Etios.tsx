@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import etiosImg from '../../assets/vehicles/etios.jpg';
 
 const Etios: React.FC = () => {
   return (
@@ -26,8 +27,8 @@ const Etios: React.FC = () => {
             <div className="space-y-6">
               <div className="bg-gray-200 rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                  alt="Toyota Etios"
+                  src={etiosImg} 
+                  alt="Toyota Etios - Jandar Travels"
                   className="w-full h-80 object-cover"
                 />
               </div>

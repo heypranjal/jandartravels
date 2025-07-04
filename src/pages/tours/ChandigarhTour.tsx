@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import arpanGoyal from '../../assets/places/chandigarh/arpan-goyal-TiHXNVTFYAU-unsplash.jpg';
+import anasVillan from '../../assets/places/chandigarh/anas-villan-R_z8A9kYZKQ-unsplash.jpg';
+import abhirajChahal from '../../assets/places/chandigarh/abhiraj-chahal-P9lVOw2QQwE-unsplash.jpg';
 
 const ChandigarhTour: React.FC = () => {
   return (
@@ -18,23 +21,23 @@ const ChandigarhTour: React.FC = () => {
             <div className="space-y-6">
               <div className="bg-gray-200 rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                  alt="Chandigarh Tour"
+                  src={arpanGoyal} 
+                  alt="Rock Garden, Chandigarh by Arpan Goyal"
                   className="w-full h-64 object-cover"
                 />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-gray-200 rounded-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2025&q=80" 
-                    alt="Rock Garden"
+                    src={anasVillan} 
+                    alt="Sukhna Lake by Anas Villan"
                     className="w-full h-32 object-cover"
                   />
                 </div>
                 <div className="bg-gray-200 rounded-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" 
-                    alt="Sukhna Lake"
+                    src={abhirajChahal} 
+                    alt="Rose Garden by Abhiraj Chahal"
                     className="w-full h-32 object-cover"
                   />
                 </div>

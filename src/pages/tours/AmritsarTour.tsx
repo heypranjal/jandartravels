@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import raviNJha from '../../assets/places/amritsar/ravi-n-jha-aU9yXmIwfkw-unsplash.jpg';
+import prado from '../../assets/places/amritsar/prado-bdWNnJP8_oA-unsplash.jpg';
+import puneet from '../../assets/places/amritsar/puneet-FSOTqD4wOKs-unsplash.jpg';
 
 const AmritsarTour: React.FC = () => {
   return (
@@ -18,23 +21,23 @@ const AmritsarTour: React.FC = () => {
             <div className="space-y-6">
               <div className="bg-gray-200 rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2025&q=80" 
-                  alt="Amritsar Tour"
+                  src={raviNJha} 
+                  alt="Golden Temple, Amritsar by Ravi N Jha"
                   className="w-full h-64 object-cover"
                 />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-gray-200 rounded-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                    alt="Golden Temple"
+                    src={prado} 
+                    alt="Wagah Border by Prado"
                     className="w-full h-32 object-cover"
                   />
                 </div>
                 <div className="bg-gray-200 rounded-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" 
-                    alt="Wagah Border"
+                    src={puneet} 
+                    alt="Jallianwala Bagh by Puneet"
                     className="w-full h-32 object-cover"
                   />
                 </div>
