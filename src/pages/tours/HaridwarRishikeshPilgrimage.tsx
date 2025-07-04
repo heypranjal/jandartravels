@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import shreyashkaMaharjan from '../../assets/places/haridwar rishikesh/shreyashka-maharjan-tPXP7U4IA40-unsplash.jpg';
+import jayanthMuppaneni from '../../assets/places/haridwar rishikesh/jayanth-muppaneni-fksv4IkwlVc-unsplash.jpg';
+import sidharthKumar from '../../assets/places/haridwar rishikesh/sidharth-kumar-kwj1_4pZ9pw-unsplash.jpg';
 
 const HaridwarRishikeshPilgrimage: React.FC = () => {
   return (
@@ -18,23 +21,23 @@ const HaridwarRishikeshPilgrimage: React.FC = () => {
             <div className="space-y-6">
               <div className="bg-gray-200 rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2025&q=80" 
-                  alt="Haridwar Rishikesh Pilgrimage"
+                  src={shreyashkaMaharjan} 
+                  alt="Ganga Aarti, Haridwar by Shreyashka Maharjan"
                   className="w-full h-64 object-cover"
                 />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-gray-200 rounded-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                    alt="Ganga River"
+                    src={jayanthMuppaneni} 
+                    alt="Laxman Jhula, Rishikesh by Jayanth Muppaneni"
                     className="w-full h-32 object-cover"
                   />
                 </div>
                 <div className="bg-gray-200 rounded-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" 
-                    alt="Temple View"
+                    src={sidharthKumar} 
+                    alt="Har Ki Pauri, Haridwar by Sidharth Kumar"
                     className="w-full h-32 object-cover"
                   />
                 </div>

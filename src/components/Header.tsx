@@ -88,6 +88,7 @@ const Header: React.FC = () => {
                 <Link to="/vehicles/etios" className="block px-4 py-3 text-gray-700 hover:bg-gray-100 transition-colors">Etios</Link>
                 <Link to="/vehicles/brezza" className="block px-4 py-3 text-gray-700 hover:bg-gray-100 transition-colors">Brezza</Link>
                 <Link to="/vehicles/bus" className="block px-4 py-3 text-gray-700 hover:bg-gray-100 transition-colors">Bus</Link>
+                <Link to="/vehicles/tempo-traveller-details" className="block px-4 py-3 text-gray-700 hover:bg-gray-100 transition-colors">Tempo Travellers</Link>
               </div>
             </div>
             <div className="relative group">
@@ -166,6 +167,7 @@ const Header: React.FC = () => {
                 <Link to="/vehicles/etios" className="block text-gray-700 hover:text-primary pl-4 py-2" onClick={handleNavLinkClick}>• Etios</Link>
                 <Link to="/vehicles/brezza" className="block text-gray-700 hover:text-primary pl-4 py-2" onClick={handleNavLinkClick}>• Brezza</Link>
                 <Link to="/vehicles/bus" className="block text-gray-700 hover:text-primary pl-4 py-2" onClick={handleNavLinkClick}>• Bus</Link>
+                <Link to="/vehicles/tempo-traveller-details" className="block text-gray-700 hover:text-primary pl-4 py-2" onClick={handleNavLinkClick}>• Tempo Travellers</Link>
               </div>
               {/* Mobile Tour Packages */}
               <div className="space-y-3">

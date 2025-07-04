@@ -14,9 +14,9 @@ const Hero: React.FC = () => {
   const carouselImages = [
     {
       id: 1,
-      image: 'https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1200&q=80',
-      title: 'Desert Adventure',
-      subtitle: 'Brown camel on open field, Rann of Kutch, India'
+      image: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80',
+      title: 'Taj Mahal, Agra',
+      subtitle: 'Iconic Taj Mahal in Agra, India'
     },
     {
       id: 2,
@@ -89,10 +89,11 @@ const Hero: React.FC = () => {
                   <img 
                     src={slide.image} 
                     alt={slide.title}
-                    className="w-full h-full object-cover object-center transition-all duration-500"
+                    className="w-full h-full object-cover object-center min-h-[400px] transition-all duration-500"
+                    style={{ objectPosition: 'center 60%' }}
                   />
                   {/* Overlay */}
-                  <div className="absolute inset-0 bg-black bg-opacity-40"></div>
+                  <div className="absolute inset-0 bg-black bg-opacity-40" style={{ backgroundColor: '#222' }}></div>
                 </div>
               </div>
             ))}

@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import agraImg from '../../assets/places/agra/arun-geetha-viswanathan-8goGYCLzrLs-unsplash.jpg';
+import delhiImg from '../../assets/places/delhi/brijender-dua-pRmAcSOP8Y0-unsplash.jpg';
+import jaipurImg from '../../assets/places/jaipur/vg-bingi-Z9s5Tt0MHKg-unsplash.jpg';
 
 const GoldenTriangleTour: React.FC = () => {
   return (
@@ -18,23 +21,23 @@ const GoldenTriangleTour: React.FC = () => {
             <div className="space-y-6">
               <div className="bg-gray-200 rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2025&q=80" 
-                  alt="Golden Triangle Tour"
+                  src={agraImg} 
+                  alt="Taj Mahal, Agra by Arun Geetha Viswanathan"
                   className="w-full h-64 object-cover"
                 />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-gray-200 rounded-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                    alt="Delhi Red Fort"
+                    src={delhiImg} 
+                    alt="Jama Masjid, Delhi by Brijender Dua"
                     className="w-full h-32 object-cover"
                   />
                 </div>
                 <div className="bg-gray-200 rounded-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" 
-                    alt="Jaipur Hawa Mahal"
+                    src={jaipurImg} 
+                    alt="Hawa Mahal, Jaipur by VG Bingi"
                     className="w-full h-32 object-cover"
                   />
                 </div>

@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import arunGeetha from '../../assets/places/agra/arun-geetha-viswanathan-8goGYCLzrLs-unsplash.jpg';
+import shreshthGupta from '../../assets/places/agra/shreshth-gupta-7-RDFPniALI-unsplash.jpg';
+import vatraVoda from '../../assets/places/agra/vatra-voda-_P5F9l4XNMA-unsplash.jpg';
 
 const SameDayAgraTour: React.FC = () => {
   return (
@@ -18,23 +21,23 @@ const SameDayAgraTour: React.FC = () => {
             <div className="space-y-6">
               <div className="bg-gray-200 rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2025&q=80" 
-                  alt="Same Day Agra Tour"
+                  src={arunGeetha} 
+                  alt="Taj Mahal, Agra, India by Arun Geetha Viswanathan"
                   className="w-full h-64 object-cover"
                 />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-gray-200 rounded-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                    alt="Agra Fort"
+                    src={shreshthGupta} 
+                    alt="Agra Fort by Shreshth Gupta"
                     className="w-full h-32 object-cover"
                   />
                 </div>
                 <div className="bg-gray-200 rounded-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" 
-                    alt="Fatehpur Sikri"
+                    src={vatraVoda} 
+                    alt="Fatehpur Sikri by Vatra Voda"
                     className="w-full h-32 object-cover"
                   />
                 </div>

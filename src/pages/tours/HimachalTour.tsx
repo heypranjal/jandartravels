@@ -1,5 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import anujRawat from '../../assets/places/himanchal/satyam-vk-ndaraKS3qeo-unsplash.jpg';
+import satyamVk from '../../assets/places/himanchal/via-thirteen-gtStVcKGpmA-unsplash.jpg';
+import yashKumarRoy from '../../assets/places/himanchal/yash-kumar-roy-Lt3q3KcAqj0-unsplash.jpg';
 
 const HimachalTour: React.FC = () => {
   return (
@@ -18,23 +21,23 @@ const HimachalTour: React.FC = () => {
             <div className="space-y-6">
               <div className="bg-gray-200 rounded-lg overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
-                  alt="Himachal Tour"
+                  src={anujRawat} 
+                  alt="Himalayan Landscape by Anuj Rawat"
                   className="w-full h-64 object-cover"
                 />
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-gray-200 rounded-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2025&q=80" 
-                    alt="Mountain View"
+                    src={satyamVk} 
+                    alt="Mountain Valley by Satyam VK"
                     className="w-full h-32 object-cover"
                   />
                 </div>
                 <div className="bg-gray-200 rounded-lg overflow-hidden">
                   <img 
-                    src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80" 
-                    alt="Hill Station"
+                    src={yashKumarRoy} 
+                    alt="Himachal Hills by Yash Kumar Roy"
                     className="w-full h-32 object-cover"
                   />
                 </div>

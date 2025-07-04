@@ -17,6 +17,7 @@ import SwiftDzire from './pages/vehicles/SwiftDzire';
 import Etios from './pages/vehicles/Etios';
 import Brezza from './pages/vehicles/Brezza';
 import Bus from './pages/vehicles/Bus';
+import TempoTravellerDetails from './pages/vehicles/TempoTravellerDetails';
 
 // Tour imports
 import DelhiLocalTour from './pages/tours/DelhiLocalTour';
@@ -61,6 +62,7 @@ function App() {
           <Route path="/vehicles/etios" element={<Etios />} />
           <Route path="/vehicles/brezza" element={<Brezza />} />
           <Route path="/vehicles/bus" element={<Bus />} />
+          <Route path="/vehicles/tempo-traveller-details" element={<TempoTravellerDetails />} />
           
           {/* Tour Routes */}
           <Route path="/tours/delhi-local" element={<DelhiLocalTour />} />
