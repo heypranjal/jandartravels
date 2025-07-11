@@ -25,6 +25,12 @@ const Services: React.FC = () => {
       title: 'Bus Services',
       description: 'Large capacity buses for group tours, corporate events, and family gatherings.',
       features: ['20+ Seater', 'AC', 'Luggage Space', 'Group Discounts']
+    },
+    {
+      icon: 'fas fa-shuttle-van',
+      title: 'Tempo Traveller',
+      description: 'Spacious and comfortable Tempo Travellers for all group sizes.',
+      features: ['9, 12, 15, 17, 20, and 26 + 1 driver', 'AC', 'Ample Luggage Space', 'Professional Driver']
     }
   ];
 
@@ -40,9 +46,9 @@ const Services: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-12 sm:mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6 mb-12 sm:mb-16">
           {taxiServices.map((service, index) => (
-            <div key={index} className="card text-center p-6 sm:p-8">
+            <div key={index} className="card text-center p-4 sm:p-6 md:p-4 lg:p-3 xl:p-2 flex flex-col h-full justify-between">
               <div className="text-4xl sm:text-5xl text-primary mb-4 sm:mb-6">
                 <i className={service.icon}></i>
               </div>
