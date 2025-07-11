@@ -6,7 +6,7 @@ import shimlaManaliImg from '../assets/places/shimla manali/alik-ghosh-9yIO-zQe3
 import jaipurImg from '../assets/places/jaipur/vg-bingi-Z9s5Tt0MHKg-unsplash.jpg';
 import nainitalImg from '../assets/places/nanital/priyadarshi-kinth-V56BhBV_SCE-unsplash.jpg';
 import haridwarRishikeshImg from '../assets/places/haridwar rishikesh/shreyashka-maharjan-tPXP7U4IA40-unsplash.jpg';
-import himachalImg from '../assets/places/himachal/anuj-rawat-TQLqUmQQF2o-unsplash.jpg';
+import himachalImg from '../assets/places/himanchal/yash-kumar-roy-Lt3q3KcAqj0-unsplash.jpg';
 import amritsarImg from '../assets/places/amritsar/ravi-n-jha-aU9yXmIwfkw-unsplash.jpg';
 import chandigarhImg from '../assets/places/chandigarh/arpan-goyal-TiHXNVTFYAU-unsplash.jpg';
 

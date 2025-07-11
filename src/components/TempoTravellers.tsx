@@ -200,11 +200,11 @@ const TaxiFleet: React.FC = () => {
                 }}
               ></span>
               <div className="relative z-10">
-                <div className="relative h-40 sm:h-48 bg-gray-200 mb-3 sm:mb-4">
+                <div className="relative h-40 sm:h-48 bg-gray-200 mb-3 sm:mb-4 flex items-center justify-center">
                   <img 
                     src={taxi.image} 
                     alt={taxi.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-contain object-center"
                   />
                   <div className="absolute top-2 right-2 bg-primary text-white px-2 py-1 rounded text-xs sm:text-sm font-semibold">
                     {taxi.price}
