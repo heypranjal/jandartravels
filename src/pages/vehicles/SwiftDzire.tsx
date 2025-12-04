@@ -1,10 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 import swiftImg from '../../assets/vehicles/swift.avif';
 
 const SwiftDzire: React.FC = () => {
   return (
-    <div className="pt-28 sm:pt-32">
+    <>
+      <SEO
+        title="Swift Dzire on Rent - 4 Seater Sedan Car Hire Noida"
+        description="Hire Maruti Swift Dzire in Noida for local & outstation travel. 4+1 seater, AC, fuel-efficient. Best rates for airport transfers. Call +91-9525853388"
+        keywords="swift dzire on rent, dzire hire noida, sedan car rental, 4 seater car hire delhi, dzire booking"
+        canonicalUrl="/vehicles/swift-dzire"
+      />
+      <div className="pt-28 sm:pt-32">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-red-900 to-orange-700 text-white py-16">
         <div className="container-custom">
@@ -31,14 +39,6 @@ const SwiftDzire: React.FC = () => {
                   alt="Maruti Swift Dzire - Jandar Travels"
                   className="w-full h-64 object-cover"
                 />
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-gray-200 rounded-lg overflow-hidden">
-                  <img 
-                    
-                    className="w-full h-32 object-cover"
-                  />
-                </div>
               </div>
             </div>
 
@@ -174,6 +174,7 @@ const SwiftDzire: React.FC = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

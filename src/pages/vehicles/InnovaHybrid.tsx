@@ -1,10 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 import innovaImg from "../../assets/vehicles/innova.jpeg";
 
 const InnovaHybrid: React.FC = () => {
   return (
-    <div className="pt-28 sm:pt-32">
+    <>
+      <SEO
+        title="Innova Hybrid on Rent - Eco-Friendly 7 Seater Car Hire"
+        description="Hire Toyota Innova Hybrid in Noida for eco-friendly travel. Fuel-efficient, 7+1 seater, AC, comfortable. Best rates for outstation trips. Call +91-9525853388"
+        keywords="innova hybrid on rent, innova hybrid hire noida, eco-friendly car rental, hybrid car hire delhi, innova hybrid booking"
+        canonicalUrl="/vehicles/innova-hybrid"
+      />
+      <div className="pt-28 sm:pt-32">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-green-900 to-blue-700 text-white py-16">
         <div className="container-custom">
@@ -166,6 +174,7 @@ const InnovaHybrid: React.FC = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

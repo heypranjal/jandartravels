@@ -1,10 +1,18 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const PrivacyPolicy: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <section className="bg-primary text-white py-12 sm:py-16 mt-16 sm:mt-20">
+    <>
+      <Helmet>
+        <title>Privacy Policy - Jandar Travels | Data Protection & Security</title>
+        <meta name="description" content="Read Jandar Travels privacy policy. Learn how we collect, use, and protect your personal information when using our taxi and tour services in Noida." />
+        <meta name="keywords" content="privacy policy jandar travels, data protection, user privacy, taxi service privacy, travel data security" />
+        <link rel="canonical" href="https://jandartravels.com/privacy-policy" />
+      </Helmet>
+      <div className="min-h-screen bg-gray-50">
+        {/* Header */}
+        <section className="bg-primary text-white py-12 sm:py-16 mt-16 sm:mt-20">
         <div className="container-custom">
           <div className="text-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Privacy Policy</h1>
@@ -168,7 +176,8 @@ const PrivacyPolicy: React.FC = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

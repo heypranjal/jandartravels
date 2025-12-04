@@ -1,12 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 import anujRawat from '../../assets/places/himanchal/satyam-vk-ndaraKS3qeo-unsplash.jpg';
 import satyamVk from '../../assets/places/himanchal/via-thirteen-gtStVcKGpmA-unsplash.jpg';
 import yashKumarRoy from '../../assets/places/himanchal/yash-kumar-roy-Lt3q3KcAqj0-unsplash.jpg';
 
 const HimachalTour: React.FC = () => {
   return (
-    <div className="pt-28 sm:pt-32">
+    <>
+      <SEO
+        title="Himachal Tour Package from Delhi - Complete HP Trip"
+        description="Book complete Himachal Pradesh tour from Delhi. Shimla, Manali, Dharamshala, Dalhousie. 7-10 days package. AC car. Call +91-9525853388"
+        keywords="himachal tour package, himachal pradesh trip, hp tour from delhi, dharamshala tour, dalhousie tour, kullu manali"
+        canonicalUrl="/tours/himachal"
+      />
+      <div className="pt-28 sm:pt-32">
       <section className="bg-gradient-to-r from-green-900 to-blue-700 text-white py-16">
         <div className="container-custom">
           <div className="text-center">
@@ -100,7 +108,8 @@ const HimachalTour: React.FC = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

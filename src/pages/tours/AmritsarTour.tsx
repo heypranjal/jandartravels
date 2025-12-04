@@ -1,12 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 import raviNJha from '../../assets/places/amritsar/ravi-n-jha-aU9yXmIwfkw-unsplash.jpg';
 import prado from '../../assets/places/amritsar/prado-bdWNnJP8_oA-unsplash.jpg';
 import puneet from '../../assets/places/amritsar/puneet-FSOTqD4wOKs-unsplash.jpg';
 
 const AmritsarTour: React.FC = () => {
   return (
-    <div className="pt-28 sm:pt-32">
+    <>
+      <SEO
+        title="Amritsar Tour Package - Golden Temple Trip from Delhi"
+        description="Book Amritsar tour package from Delhi/Noida. Visit Golden Temple, Wagah Border, Jallianwala Bagh. 2-3 days. AC car. Call +91-9525853388"
+        keywords="amritsar tour package, golden temple tour, wagah border trip, amritsar from delhi, punjab tour"
+        canonicalUrl="/tours/amritsar"
+      />
+      <div className="pt-28 sm:pt-32">
       <section className="bg-gradient-to-r from-yellow-900 to-orange-700 text-white py-16">
         <div className="container-custom">
           <div className="text-center">
@@ -100,7 +108,8 @@ const AmritsarTour: React.FC = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

@@ -1,10 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 import innovaImg from '../../assets/vehicles/innova.jpeg';
 
 const InnovaCrysta: React.FC = () => {
   return (
-    <div className="pt-28 sm:pt-32">
+    <>
+      <SEO
+        title="Innova Crysta on Rent - 7 Seater Luxury Car Hire Noida"
+        description="Hire Toyota Innova Crysta in Noida for outstation trips, airport transfers & tours. 7+1 seater, AC, comfortable. Best rates for Delhi, Agra, Jaipur trips. Call +91-9525853388"
+        keywords="innova crysta on rent, innova crysta hire noida, 7 seater car rental, luxury car hire delhi, innova crysta booking, toyota innova rental"
+        canonicalUrl="/vehicles/innova-crysta"
+      />
+      <div className="pt-28 sm:pt-32">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-900 to-green-700 text-white py-16">
         <div className="container-custom">
@@ -165,7 +173,8 @@ const InnovaCrysta: React.FC = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

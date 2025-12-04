@@ -1,13 +1,7 @@
 import React from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Features: React.FC = () => {
-  const navigate = useNavigate();
-
-  const handleBookNow = () => {
-    navigate('/contact-us');
-  };
-
   const features = [
     {
       icon: 'fas fa-users',

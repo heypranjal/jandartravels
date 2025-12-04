@@ -1,12 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 import arpanGoyal from '../../assets/places/chandigarh/arpan-goyal-TiHXNVTFYAU-unsplash.jpg';
 import anasVillan from '../../assets/places/chandigarh/anas-villan-R_z8A9kYZKQ-unsplash.jpg';
 import abhirajChahal from '../../assets/places/chandigarh/abhiraj-chahal-P9lVOw2QQwE-unsplash.jpg';
 
 const ChandigarhTour: React.FC = () => {
   return (
-    <div className="pt-28 sm:pt-32">
+    <>
+      <SEO
+        title="Chandigarh Tour Package from Delhi - City Beautiful Trip"
+        description="Book Chandigarh tour package from Delhi/Noida. Visit Rock Garden, Sukhna Lake, Rose Garden. 1-2 days trip. AC car. Call +91-9525853388"
+        keywords="chandigarh tour package, chandigarh trip from delhi, rock garden tour, sukhna lake visit, city beautiful tour"
+        canonicalUrl="/tours/chandigarh"
+      />
+      <div className="pt-28 sm:pt-32">
       <section className="bg-gradient-to-r from-green-900 to-blue-700 text-white py-16">
         <div className="container-custom">
           <div className="text-center">
@@ -100,7 +108,8 @@ const ChandigarhTour: React.FC = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

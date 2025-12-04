@@ -1,12 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 import shreyashkaMaharjan from '../../assets/places/haridwar rishikesh/shreyashka-maharjan-tPXP7U4IA40-unsplash.jpg';
 import jayanthMuppaneni from '../../assets/places/haridwar rishikesh/jayanth-muppaneni-fksv4IkwlVc-unsplash.jpg';
 import sidharthKumar from '../../assets/places/haridwar rishikesh/sidharth-kumar-kwj1_4pZ9pw-unsplash.jpg';
 
 const HaridwarRishikeshPilgrimage: React.FC = () => {
   return (
-    <div className="pt-28 sm:pt-32">
+    <>
+      <SEO
+        title="Haridwar Rishikesh Tour - Pilgrimage Package from Delhi"
+        description="Book Haridwar Rishikesh pilgrimage tour from Delhi/Noida. Ganga Aarti, Laxman Jhula, temples visit. 3-4 days. AC car. Call +91-9525853388"
+        keywords="haridwar rishikesh tour, haridwar tour package, rishikesh trip, ganga aarti tour, pilgrimage tour delhi"
+        canonicalUrl="/tours/haridwar-rishikesh"
+      />
+      <div className="pt-28 sm:pt-32">
       <section className="bg-gradient-to-r from-orange-900 to-yellow-700 text-white py-16">
         <div className="container-custom">
           <div className="text-center">
@@ -100,7 +108,8 @@ const HaridwarRishikeshPilgrimage: React.FC = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

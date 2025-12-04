@@ -1,10 +1,18 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const TermsConditions: React.FC = () => {
   return (
-    <div className="min-h-screen bg-gray-50">
-      {/* Header */}
-      <section className="bg-primary text-white py-12 sm:py-16 mt-16 sm:mt-20">
+    <>
+      <Helmet>
+        <title>Terms & Conditions - Jandar Travels | Service Agreement</title>
+        <meta name="description" content="Read Jandar Travels terms and conditions. Understand our booking policies, cancellation rules, payment terms, and service agreements for taxi and tour services." />
+        <meta name="keywords" content="terms conditions jandar travels, taxi booking terms, travel service agreement, cancellation policy, booking policy" />
+        <link rel="canonical" href="https://jandartravels.com/terms-conditions" />
+      </Helmet>
+      <div className="min-h-screen bg-gray-50">
+        {/* Header */}
+        <section className="bg-primary text-white py-12 sm:py-16 mt-16 sm:mt-20">
         <div className="container-custom">
           <div className="text-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">Terms & Conditions</h1>
@@ -232,7 +240,8 @@ const TermsConditions: React.FC = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

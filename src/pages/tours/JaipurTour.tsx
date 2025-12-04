@@ -1,12 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 import vgBingi from '../../assets/places/jaipur/vg-bingi-Z9s5Tt0MHKg-unsplash.jpg';
 import adityaSiva1 from '../../assets/places/jaipur/aditya-siva-3P1G67zNyCI-unsplash.jpg';
 import adityaSiva2 from '../../assets/places/jaipur/aditya-siva-6rDbvXzIVpQ-unsplash.jpg';
 
 const JaipurTour: React.FC = () => {
   return (
-    <div className="pt-36 sm:pt-40">
+    <>
+      <SEO
+        title="Jaipur Tour Package from Delhi - Pink City Trip"
+        description="Book Jaipur tour package from Delhi/Noida. Visit Amber Fort, Hawa Mahal, City Palace. 2-3 days trip. AC car available. Call +91-9525853388"
+        keywords="jaipur tour package, jaipur trip from delhi, pink city tour, amber fort tour, rajasthan tour, jaipur sightseeing"
+        canonicalUrl="/tours/jaipur"
+      />
+      <div className="pt-36 sm:pt-40">
       <section className="bg-gradient-to-r from-pink-900 to-orange-700 text-white py-16">
         <div className="container-custom">
           <div className="text-center">
@@ -100,7 +108,8 @@ const JaipurTour: React.FC = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

@@ -1,10 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 import breezaImg from '../../assets/vehicles/breeza.jpg';
 
 const Brezza: React.FC = () => {
   return (
-    <div className="pt-28 sm:pt-32">
+    <>
+      <SEO
+        title="Brezza on Rent - 5 Seater SUV Car Hire Noida"
+        description="Hire Maruti Brezza in Noida for family trips & adventure travel. 5 seater compact SUV, AC, comfortable. Best rates. Call +91-9525853388"
+        keywords="brezza on rent, brezza hire noida, suv car rental, 5 seater car hire delhi, brezza booking"
+        canonicalUrl="/vehicles/brezza"
+      />
+      <div className="pt-28 sm:pt-32">
       <section className="bg-gradient-to-r from-green-900 to-blue-700 text-white py-16">
         <div className="container-custom">
           <div className="text-center">
@@ -98,6 +106,7 @@ const Brezza: React.FC = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

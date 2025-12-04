@@ -1,12 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 import alikGhosh from '../../assets/places/shimla manali/alik-ghosh-9yIO-zQe35g-unsplash.jpg';
 import barbareKacharava from '../../assets/places/shimla manali/barbare-kacharava-lozEfheL82k-unsplash.jpg';
 import shyamRaj from '../../assets/places/shimla manali/shyam-raj-vishwakarma-a8AdBuw41kQ-unsplash.jpg';
 
 const ShimlaManaliTour: React.FC = () => {
   return (
-    <div className="pt-28 sm:pt-32">
+    <>
+      <SEO
+        title="Shimla Manali Tour Package from Delhi - Hill Station Trip"
+        description="Book Shimla Manali tour package from Delhi/Noida. 5-7 days trip covering Kufri, Rohtang, Solang Valley. AC car, hotel booking. Call +91-9525853388"
+        keywords="shimla manali tour, shimla manali package, himachal tour, hill station tour, shimla tour from delhi, manali trip"
+        canonicalUrl="/tours/shimla-manali"
+      />
+      <div className="pt-28 sm:pt-32">
       <section className="bg-gradient-to-r from-green-900 to-blue-700 text-white py-16">
         <div className="container-custom">
           <div className="text-center">
@@ -95,7 +103,8 @@ const ShimlaManaliTour: React.FC = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

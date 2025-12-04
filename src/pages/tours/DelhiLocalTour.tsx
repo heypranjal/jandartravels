@@ -1,12 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 import brijenderDua from '../../assets/places/delhi/brijender-dua-pRmAcSOP8Y0-unsplash.jpg';
 import akshatJhingran from '../../assets/places/delhi/akshat-jhingran-rwLiOXHSWlY-unsplash.jpg';
 import benitaElizabeth from '../../assets/places/delhi/benita-elizabeth-john-rYfwB3pB3D4-unsplash.jpg';
 
 const DelhiLocalTour: React.FC = () => {
   return (
-    <div className="pt-36 sm:pt-40">
+    <>
+      <SEO
+        title="Delhi Local Tour Package - Sightseeing & City Tour"
+        description="Book Delhi local tour package from Noida. Visit Red Fort, Qutub Minar, India Gate, Lotus Temple & more. Full day sightseeing with AC car. Call +91-9525853388"
+        keywords="delhi local tour, delhi sightseeing, delhi city tour, delhi tour package, delhi tourist places, red fort tour"
+        canonicalUrl="/tours/delhi-local"
+      />
+      <div className="pt-36 sm:pt-40">
       <section className="bg-gradient-to-r from-red-900 to-orange-700 text-white py-16">
         <div className="container-custom">
           <div className="text-center">
@@ -100,7 +108,8 @@ const DelhiLocalTour: React.FC = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

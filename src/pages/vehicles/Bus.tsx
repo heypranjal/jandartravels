@@ -1,10 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 import busImg from '../../assets/vehicles/bus.avif';
 
 const Bus: React.FC = () => {
   return (
-    <div className="pt-28 sm:pt-32">
+    <>
+      <SEO
+        title="Bus on Rent - 20-50 Seater Bus Hire Noida Delhi"
+        description="Hire AC Bus in Noida for group travel, weddings, corporate events. 20-50 seater options available. Professional drivers. Call +91-9525853388"
+        keywords="bus on rent noida, bus hire delhi, 50 seater bus rental, group travel bus, wedding bus hire, corporate bus rental"
+        canonicalUrl="/vehicles/bus"
+      />
+      <div className="pt-28 sm:pt-32">
       <section className="bg-gradient-to-r from-blue-900 to-blue-400 text-white py-16">
         <div className="container-custom">
           <div className="text-center">
@@ -163,6 +171,7 @@ const Bus: React.FC = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

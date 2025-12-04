@@ -1,12 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 import agraImg from '../../assets/places/agra/arun-geetha-viswanathan-8goGYCLzrLs-unsplash.jpg';
 import delhiImg from '../../assets/places/delhi/brijender-dua-pRmAcSOP8Y0-unsplash.jpg';
 import jaipurImg from '../../assets/places/jaipur/vg-bingi-Z9s5Tt0MHKg-unsplash.jpg';
 
 const GoldenTriangleTour: React.FC = () => {
   return (
-    <div className="pt-28 sm:pt-32">
+    <>
+      <SEO
+        title="Golden Triangle Tour - Delhi Agra Jaipur Package"
+        description="Book Golden Triangle tour covering Delhi, Agra & Jaipur. 5-6 days package with Taj Mahal, Amber Fort visits. AC car, hotels. Call +91-9525853388"
+        keywords="golden triangle tour, delhi agra jaipur tour, golden triangle package, india tour package, taj mahal amber fort tour"
+        canonicalUrl="/tours/golden-triangle"
+      />
+      <div className="pt-28 sm:pt-32">
       <section className="bg-gradient-to-r from-yellow-900 to-orange-700 text-white py-16">
         <div className="container-custom">
           <div className="text-center">
@@ -100,7 +108,8 @@ const GoldenTriangleTour: React.FC = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

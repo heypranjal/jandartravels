@@ -1,12 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 import arunGeetha from '../../assets/places/agra/arun-geetha-viswanathan-8goGYCLzrLs-unsplash.jpg';
 import shreshthGupta from '../../assets/places/agra/shreshth-gupta-7-RDFPniALI-unsplash.jpg';
 import vatraVoda from '../../assets/places/agra/vatra-voda-_P5F9l4XNMA-unsplash.jpg';
 
 const SameDayAgraTour: React.FC = () => {
   return (
-    <div className="pt-36 sm:pt-40">
+    <>
+      <SEO
+        title="Same Day Agra Tour from Delhi - Taj Mahal Day Trip"
+        description="Book same day Agra tour from Delhi/Noida. Visit Taj Mahal, Agra Fort, Mehtab Bagh. Sunrise/Sunset options. AC car, guide. Call +91-9525853388"
+        keywords="same day agra tour, taj mahal day trip, delhi to agra tour, agra tour package, taj mahal tour from delhi"
+        canonicalUrl="/tours/same-day-agra"
+      />
+      <div className="pt-36 sm:pt-40">
       <section className="bg-gradient-to-r from-blue-900 to-purple-700 text-white py-16">
         <div className="container-custom">
           <div className="text-center">
@@ -100,7 +108,8 @@ const SameDayAgraTour: React.FC = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 

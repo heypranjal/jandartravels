@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 
 const travellerOptions = [
   { seats: 9, description: 'Ideal for small groups and family outings. Comfortable seating and ample luggage space.' },
@@ -13,7 +14,14 @@ const travellerOptions = [
 
 const TempoTravellerDetails: React.FC = () => {
   return (
-    <div className="pt-36 sm:pt-40">
+    <>
+      <SEO
+        title="Tempo Traveller on Rent - 12-26 Seater Hire Noida"
+        description="Hire Tempo Traveller in Noida for group trips & tours. 12, 17, 20, 26 seater options. AC, pushback seats. Best rates. Call +91-9525853388"
+        keywords="tempo traveller on rent, tempo traveller hire noida, 12 seater tempo, 17 seater tempo, group travel noida"
+        canonicalUrl="/vehicles/tempo-traveller-details"
+      />
+      <div className="pt-36 sm:pt-40">
       <section className="bg-gradient-to-r from-yellow-600 to-yellow-800 text-white py-16">
         <div className="container-custom text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-4">Tempo Traveller Options</h1>
@@ -43,6 +51,7 @@ const TempoTravellerDetails: React.FC = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

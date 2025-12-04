@@ -1,10 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 import innovaImg from "../../assets/vehicles/innova.jpeg";
 
 const Innova: React.FC = () => {
   return (
-    <div className="pt-28 sm:pt-32">
+    <>
+      <SEO
+        title="Innova on Rent - 7 Seater MUV Car Hire Noida Delhi"
+        description="Hire Toyota Innova in Noida for family trips, outstation travel & tours. 7+1 seater, AC, spacious. Affordable rates for Delhi NCR. Call +91-9525853388"
+        keywords="innova on rent, innova hire noida, 7 seater car rental noida, muv car hire delhi, innova booking noida, family car rental"
+        canonicalUrl="/vehicles/innova"
+      />
+      <div className="pt-28 sm:pt-32">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-gray-900 to-blue-700 text-white py-16">
         <div className="container-custom">
@@ -162,6 +170,7 @@ const Innova: React.FC = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

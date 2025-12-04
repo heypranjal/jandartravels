@@ -1,10 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 import ertigaImg from '../../assets/vehicles/ertiga.jpg';
 
 const Ertiga: React.FC = () => {
   return (
-    <div className="pt-28 sm:pt-32">
+    <>
+      <SEO
+        title="Ertiga on Rent - 7 Seater MPV Car Hire Noida"
+        description="Hire Maruti Ertiga in Noida for family trips & outstation travel. 7 seater, AC, fuel-efficient. Affordable rates for Delhi NCR trips. Call +91-9525853388"
+        keywords="ertiga on rent, ertiga hire noida, 7 seater car rental, mpv car hire delhi, ertiga booking, family car rental noida"
+        canonicalUrl="/vehicles/ertiga"
+      />
+      <div className="pt-28 sm:pt-32">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-blue-900 to-green-700 text-white py-16">
         <div className="container-custom">
@@ -162,6 +170,7 @@ const Ertiga: React.FC = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

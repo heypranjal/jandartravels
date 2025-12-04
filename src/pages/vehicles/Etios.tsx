@@ -1,10 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 import etiosImg from '../../assets/vehicles/etios.jpg';
 
 const Etios: React.FC = () => {
   return (
-    <div className="pt-36 sm:pt-40">
+    <>
+      <SEO
+        title="Etios on Rent - 4 Seater Sedan Car Hire Noida"
+        description="Hire Toyota Etios in Noida for comfortable travel. 4+1 seater, AC, spacious boot. Affordable rates for local & outstation trips. Call +91-9525853388"
+        keywords="etios on rent, etios hire noida, toyota etios rental, sedan car hire delhi, etios booking"
+        canonicalUrl="/vehicles/etios"
+      />
+      <div className="pt-36 sm:pt-40">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-red-900 to-orange-700 text-white py-16">
         <div className="container-custom">
@@ -183,6 +191,7 @@ const Etios: React.FC = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

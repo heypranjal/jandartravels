@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -7,6 +8,7 @@ import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsConditions from './pages/TermsConditions';
+import NotFound from './pages/NotFound';
 
 // Vehicle imports
 import InnovaCrysta from './pages/vehicles/InnovaCrysta';
@@ -42,43 +44,48 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <div className="App">
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about-us" element={<AboutUs />} />
-          <Route path="/contact-us" element={<ContactUs />} />
-          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-          <Route path="/terms-conditions" element={<TermsConditions />} />
-          
-          {/* Vehicle Routes */}
-          <Route path="/vehicles/innova-crysta" element={<InnovaCrysta />} />
-          <Route path="/vehicles/innova-hybrid" element={<InnovaHybrid />} />
-          <Route path="/vehicles/innova" element={<Innova />} />
-          <Route path="/vehicles/ertiga" element={<Ertiga />} />
-          <Route path="/vehicles/swift-dzire" element={<SwiftDzire />} />
-          <Route path="/vehicles/etios" element={<Etios />} />
-          <Route path="/vehicles/brezza" element={<Brezza />} />
-          <Route path="/vehicles/bus" element={<Bus />} />
-          <Route path="/vehicles/tempo-traveller-details" element={<TempoTravellerDetails />} />
-          
-          {/* Tour Routes */}
-          <Route path="/tours/delhi-local" element={<DelhiLocalTour />} />
-          <Route path="/tours/same-day-agra" element={<SameDayAgraTour />} />
-          <Route path="/tours/shimla-manali" element={<ShimlaManaliTour />} />
-          <Route path="/tours/jaipur" element={<JaipurTour />} />
-          <Route path="/tours/golden-triangle" element={<GoldenTriangleTour />} />
-          <Route path="/tours/nainital" element={<NainitalTour />} />
-          <Route path="/tours/haridwar-rishikesh" element={<HaridwarRishikeshPilgrimage />} />
-          <Route path="/tours/himachal" element={<HimachalTour />} />
-          <Route path="/tours/amritsar" element={<AmritsarTour />} />
-          <Route path="/tours/chandigarh" element={<ChandigarhTour />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <HelmetProvider>
+      <Router>
+        <ScrollToTop />
+        <div className="App">
+          <Header />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+            <Route path="/terms-conditions" element={<TermsConditions />} />
+
+            {/* Vehicle Routes */}
+            <Route path="/vehicles/innova-crysta" element={<InnovaCrysta />} />
+            <Route path="/vehicles/innova-hybrid" element={<InnovaHybrid />} />
+            <Route path="/vehicles/innova" element={<Innova />} />
+            <Route path="/vehicles/ertiga" element={<Ertiga />} />
+            <Route path="/vehicles/swift-dzire" element={<SwiftDzire />} />
+            <Route path="/vehicles/etios" element={<Etios />} />
+            <Route path="/vehicles/brezza" element={<Brezza />} />
+            <Route path="/vehicles/bus" element={<Bus />} />
+            <Route path="/vehicles/tempo-traveller-details" element={<TempoTravellerDetails />} />
+
+            {/* Tour Routes */}
+            <Route path="/tours/delhi-local" element={<DelhiLocalTour />} />
+            <Route path="/tours/same-day-agra" element={<SameDayAgraTour />} />
+            <Route path="/tours/shimla-manali" element={<ShimlaManaliTour />} />
+            <Route path="/tours/jaipur" element={<JaipurTour />} />
+            <Route path="/tours/golden-triangle" element={<GoldenTriangleTour />} />
+            <Route path="/tours/nainital" element={<NainitalTour />} />
+            <Route path="/tours/haridwar-rishikesh" element={<HaridwarRishikeshPilgrimage />} />
+            <Route path="/tours/himachal" element={<HimachalTour />} />
+            <Route path="/tours/amritsar" element={<AmritsarTour />} />
+            <Route path="/tours/chandigarh" element={<ChandigarhTour />} />
+
+            {/* 404 Route */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
+    </HelmetProvider>
   );
 }
 

@@ -1,12 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SEO from '../../components/SEO';
 import priyadarshiKinth from '../../assets/places/nanital/priyadarshi-kinth-V56BhBV_SCE-unsplash.jpg';
 import abhishekRoyal from '../../assets/places/nanital/abhishek-royal-S0TUYf1vhg8-unsplash.jpg';
 import anubhavRana from '../../assets/places/nanital/anubhav-rana-9qmTCba-oZE-unsplash.jpg';
 
 const NainitalTour: React.FC = () => {
   return (
-    <div className="pt-36 sm:pt-40">
+    <>
+      <SEO
+        title="Nainital Tour Package from Delhi - Lake City Trip"
+        description="Book Nainital tour package from Delhi/Noida. Visit Naini Lake, Mall Road, Naina Devi Temple. 3-4 days trip. AC car. Call +91-9525853388"
+        keywords="nainital tour package, nainital trip from delhi, uttarakhand tour, lake city tour, nainital sightseeing"
+        canonicalUrl="/tours/nainital"
+      />
+      <div className="pt-36 sm:pt-40">
       <section className="bg-gradient-to-r from-blue-900 to-green-700 text-white py-16">
         <div className="container-custom">
           <div className="text-center">
@@ -100,7 +108,8 @@ const NainitalTour: React.FC = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 };
 
